@@ -10,6 +10,7 @@ public class PickItem : MonoBehaviour
     private Transform targetFeed;
 
     private FishNeededManager fnm;
+    private Patrolling ptrl;
 
     //public SpriteRenderer fishSprite;
     //private fishStat fish;
@@ -17,6 +18,7 @@ public class PickItem : MonoBehaviour
     private void Start()
     {
         fnm = GameObject.Find("FishNeededManager").GetComponent<FishNeededManager>();
+        ptrl = GetComponent<Patrolling>();
         //fish = gameObject.GetComponent<fishStat>();
     }
 
@@ -27,14 +29,40 @@ public class PickItem : MonoBehaviour
             targetMedicine = GameObject.FindGameObjectWithTag("Medicine").GetComponent<Transform>();
             transform.position = Vector2.MoveTowards(transform.position, targetMedicine.position, speed * Time.deltaTime);
 
-            //if (targetMedicine.position.x > transform.position.x)
-            //{
-            //    fishSprite.flipX = false;
-            //}
-            //else if (targetMedicine.position.x < transform.position.x)
-            //{
-            //    fishSprite.flipX = true;
-            //}
+            if (targetMedicine.position.x > transform.position.x && ptrl.rotationValue != 0)
+            {
+                ptrl.isRotate = true;
+
+                if (ptrl.isRotate == true)
+                {
+                    ptrl.rotationValue -= 10;
+                    transform.localRotation = Quaternion.Euler(0, ptrl.rotationValue, 0);
+
+                    if (ptrl.rotationValue <= 0)
+                    {
+                        ptrl.isRotate = false;
+                        ptrl.rotationValue = 0;
+                        transform.localRotation = Quaternion.Euler(0, ptrl.rotationValue, 0);
+                    }
+                }
+            }
+            else if (targetMedicine.position.x < transform.position.x && ptrl.rotationValue != 180)
+            {
+                ptrl.isRotate = true;
+
+                if (ptrl.isRotate == true)
+                {
+                    ptrl.rotationValue += 10;
+                    transform.localRotation = Quaternion.Euler(0, ptrl.rotationValue, 0);
+
+                    if (ptrl.rotationValue >= 180)
+                    {
+                        ptrl.isRotate = false;
+                        ptrl.rotationValue = 180;
+                        transform.localRotation = Quaternion.Euler(0, ptrl.rotationValue, 0);
+                    }
+                }
+            }
         }
 
         if (fnm.isMovingFeed == true)
@@ -42,14 +70,40 @@ public class PickItem : MonoBehaviour
             targetFeed = GameObject.FindGameObjectWithTag("Feed").GetComponent<Transform>();
             transform.position = Vector2.MoveTowards(transform.position, targetFeed.position, speed * Time.deltaTime);
 
-            //if (targetFeed.position.x > transform.position.x)
-            //{
-            //    fishSprite.flipX = false;
-            //}
-            //else if (targetFeed.position.x < transform.position.x)
-            //{
-            //    fishSprite.flipX = true;
-            //}
+            if (targetFeed.position.x > transform.position.x && ptrl.rotationValue != 0)
+            {
+                ptrl.isRotate = true;
+
+                if (ptrl.isRotate == true)
+                {
+                    ptrl.rotationValue -= 10;
+                    transform.localRotation = Quaternion.Euler(0, ptrl.rotationValue, 0);
+
+                    if (ptrl.rotationValue <= 0)
+                    {
+                        ptrl.isRotate = false;
+                        ptrl.rotationValue = 0;
+                        transform.localRotation = Quaternion.Euler(0, ptrl.rotationValue, 0);
+                    }
+                }
+            }
+            else if (targetFeed.position.x < transform.position.x && ptrl.rotationValue != 180)
+            {
+                ptrl.isRotate = true;
+
+                if (ptrl.isRotate == true)
+                {
+                    ptrl.rotationValue += 10;
+                    transform.localRotation = Quaternion.Euler(0, ptrl.rotationValue, 0);
+
+                    if (ptrl.rotationValue >= 180)
+                    {
+                        ptrl.isRotate = false;
+                        ptrl.rotationValue = 180;
+                        transform.localRotation = Quaternion.Euler(0, ptrl.rotationValue, 0);
+                    }
+                }
+            }
         }
     }
 

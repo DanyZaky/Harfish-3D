@@ -13,7 +13,8 @@ public class Patrolling : MonoBehaviour
 
     private FishNeededManager fnm;
 
-    //public SpriteRenderer fishSprite;
+    public float rotationValue;
+    public bool isRotate;
 
     void Start()
     {
@@ -48,16 +49,40 @@ public class Patrolling : MonoBehaviour
                 }
             }
             //direction
-            //if (moveSpots[randomSpot].position.x > transform.position.x)
-            //{
-                // transform.localScale = new Vector3(0.5f, 0.5f, 1);
-            //    fishSprite.flipX = false;
-            //}
-            //else if (moveSpots[randomSpot].position.x < transform.position.x)
-            //{
-                // transform.localScale = new Vector3(-0.5f, 0.5f, 1);
-            //    fishSprite.flipX = true;
-            //}
+            if (moveSpots[randomSpot].position.x > transform.position.x && rotationValue != 0)
+            {
+                isRotate = true;
+
+                if (isRotate == true)
+                {
+                    rotationValue -= 10;
+                    transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
+                    
+                    if(rotationValue <= 0)
+                    {
+                        isRotate = false;
+                        rotationValue = 0;
+                        transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
+                    }
+                }
+            }
+            else if (moveSpots[randomSpot].position.x < transform.position.x && rotationValue != 180)
+            {
+                isRotate = true;
+
+                if (isRotate == true)
+                {
+                    rotationValue += 10;
+                    transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
+
+                    if (rotationValue >= 180)
+                    {
+                        isRotate = false;
+                        rotationValue = 180;
+                        transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
+                    }
+                }
+            }
         }
     }
 }
