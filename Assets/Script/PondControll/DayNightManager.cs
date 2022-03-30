@@ -6,13 +6,10 @@ using TMPro;
 public class DayNightManager : MonoBehaviour
 {
     GameObject fishPond;
-    //SpriteRenderer Sprite;
     PondScript pondCs;
 
-    //[SerializeField] Color dayColor = Color.black;
-    //[SerializeField] Color nightColor = Color.black;
-
     [SerializeField] private TextMeshProUGUI phLevelInfo;
+    [SerializeField] private GameObject DayLight, NightLight;
 
     public string dayPhase;
 
@@ -25,21 +22,22 @@ public class DayNightManager : MonoBehaviour
         //Sprite = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         dayPhase = pondCs.getDayPhase();
         if (dayPhase == "daylight")
         {
             phLevelInfo.SetText("PH = 8");
-            //Sprite.color = dayColor;
+            DayLight.SetActive(true);
+            NightLight.SetActive(false);
 
         }
 
         else if (dayPhase == "night")
         {
             phLevelInfo.SetText("PH = 5");
-            //Sprite.color = nightColor;
+            DayLight.SetActive(true);
+            NightLight.SetActive(false);
         }
     }
 }

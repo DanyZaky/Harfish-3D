@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 380019156358547082}
   - component: {fileID: 1033099937382987585}
   - component: {fileID: 867976619741360870}
+  - component: {fileID: 4752133443495831324}
   m_Layer: 0
   m_Name: 'Ikan Mas '
   m_TagString: Untagged
@@ -73,6 +74,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  rotationValue: 0
+  isRotate: 0
 --- !u!114 &380019156358547082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +136,40 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4752133443495831324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201866060432360110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1fbf01bbca0b28498289ba0835da33a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishName: bawal
+  fishAgeInDays: 0
+  stressLevel: 0
+  maxWaterTemperature: 37
+  minWaterTemperature: 9
+  alive: 1
+  sicknessLevel: 0
+  starveLevel: 0
+  maxStarveLevel: 10
+  breedAble: 0
+  isMale: 1
+  lifeSpan: 150
+  harvestDayCounter: 80
+  timePerDay: 6
+  timePerDayFixed: 6
+  isReadyToHarvest: 0
+  weight: 50
+  isTimeRunning: 0
+  healthPoint: 100
+  fishMaxSize: 25
+  fishMinSize: 0.5
+  growthPerdayVar: 0
 --- !u!1001 &6403981843510745951
 PrefabInstance:
   m_ObjectHideFlags: 0
