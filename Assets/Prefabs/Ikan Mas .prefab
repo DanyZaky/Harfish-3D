@@ -165,7 +165,7 @@ MonoBehaviour:
   timePerDayFixed: 6
   isReadyToHarvest: 0
   weight: 50
-  isTimeRunning: 0
+  isTimeRunning: 1
   healthPoint: 100
   fishMaxSize: 25
   fishMinSize: 0.5
