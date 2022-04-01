@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
-  m_Name: ForwardRenderer
+  m_Name: UniversalRenderPipelineAsset_Renderer
   m_EditorClassIdentifier: 
   m_RendererFeatures: []
   m_RendererFeatureMap: 
@@ -36,7 +36,7 @@ MonoBehaviour:
     overrideStencilState: 0
     stencilReference: 0
     stencilCompareFunction: 8
-    passOperation: 0
+    passOperation: 2
     failOperation: 0
     zFailOperation: 0
   m_ShadowTransparentReceive: 1
