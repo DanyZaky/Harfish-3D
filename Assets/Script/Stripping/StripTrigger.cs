@@ -9,10 +9,13 @@ public class StripTrigger : MonoBehaviour
 
     private float jumlahTelur;
     [SerializeField] private TextMeshProUGUI jumalhTelurText;
+    [SerializeField] private GameObject delayStripping;
 
     void Start()
     {
         pb = GameObject.Find("PowerBar").GetComponent<PowerBar>();
+        gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+        delayStripping.GetComponent<PolygonCollider2D>().enabled = false;
 
         jumlahTelur = 0f;
     }
@@ -33,10 +36,12 @@ public class StripTrigger : MonoBehaviour
     private IEnumerator strippingAnimation()
     {
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+        delayStripping.GetComponent<PolygonCollider2D>().enabled = true;
 
         yield return new WaitForSeconds(5);
         
         pb.isPowerRunning = true;
         gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+        delayStripping.GetComponent<PolygonCollider2D>().enabled = false;
     }
 }
