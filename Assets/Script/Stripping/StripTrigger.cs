@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using TMPro;
 
 public class StripTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
+    PowerBar pb;
+
+    private float jumlahTelur;
+    [SerializeField] private TextMeshProUGUI jumalhTelurText;
+
     void Start()
     {
-        
+        pb = GameObject.Find("PowerBar").GetComponent<PowerBar>();
+
+        jumlahTelur = 0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -19,6 +24,19 @@ public class StripTrigger : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("is trip");
+        pb.isPowerRunning = false;
+        jumlahTelur += 1f;
+        jumalhTelurText.SetText(jumlahTelur.ToString("0"));
+        StartCoroutine(strippingAnimation());
+    }
+
+    private IEnumerator strippingAnimation()
+    {
+        gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+
+        yield return new WaitForSeconds(5);
+        
+        pb.isPowerRunning = true;
+        gameObject.GetComponent<PolygonCollider2D>().enabled = true;
     }
 }

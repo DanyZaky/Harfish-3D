@@ -5,35 +5,43 @@ using UnityEngine;
 public class PowerBar : MonoBehaviour
 {
     private bool isPowerUp;
+    public bool isPowerRunning;
     private float powerCount, powerCountCounter;
     [SerializeField] RectTransform powerParameter;
+    [SerializeField] float speedParameter;
     void Start()
     {
         powerCount = 0f;
         powerCountCounter = powerCount;
+
+        isPowerRunning = true;
     }
 
     void Update()
     {
-        if (isPowerUp)
+        if(isPowerRunning)
         {
-            powerCountCounter += 1f;
-
-            if(powerCountCounter >= 380f)
+            if (isPowerUp)
             {
-                isPowerUp = false;
+                powerCountCounter += 1f * speedParameter;
+                powerParameter.anchoredPosition = new Vector2(0, powerCountCounter);
+
+                if (powerCountCounter >= 430f)
+                {
+                    isPowerUp = false;
+                }
+            }
+
+            if (!isPowerUp)
+            {
+                powerCountCounter -= 1f * speedParameter;
+                powerParameter.anchoredPosition = new Vector2(0, powerCountCounter);
+
+                if (powerCountCounter <= -430f)
+                {
+                    isPowerUp = true;
+                }
             }
         }
-
-        if(!isPowerUp)
-        {
-            powerCountCounter -= 1f;
-            if (powerCountCounter <= 0f)
-            {
-                isPowerUp = true;
-            }
-        }
-
-        Debug.Log("power = "+ powerCountCounter);
     }
 }
