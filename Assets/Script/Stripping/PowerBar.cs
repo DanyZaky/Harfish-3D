@@ -6,7 +6,7 @@ public class PowerBar : MonoBehaviour
 {
     private bool isPowerUp;
     public bool isPowerRunning;
-    private float powerCount, powerCountCounter;
+    [HideInInspector] public float powerCount, powerCountCounter;
     [SerializeField] RectTransform powerParameter;
     [SerializeField] float speedParameter;
     void Start()

@@ -13,7 +13,7 @@ public class StripTrigger : MonoBehaviour
     [SerializeField] private Image progressBar;
 
     [SerializeField] private TextMeshProUGUI jumalhTelurText, countdownText;
-    [SerializeField] private GameObject delayStripping, prefabsSelTelur;
+    [SerializeField] private GameObject delayStripping, prefabsSelTelur, winPanel, losePanel;
 
     [SerializeField] private float countDown;
     private float countDownCounter;
@@ -28,6 +28,8 @@ public class StripTrigger : MonoBehaviour
         progressBar.fillAmount = 0;
 
         countDownCounter = countDown;
+        winPanel.SetActive(false);
+        losePanel.SetActive(false);
     }
 
     void Update()
@@ -39,6 +41,11 @@ public class StripTrigger : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (pb.powerCountCounter <= 130f && pb.powerCountCounter >= -130f)
+        {
+            Debug.Log("terstrip");
+        }
+        
         Instantiate(prefabsSelTelur, new Vector3(-1.65f, -0.53f, -7.54f), Quaternion.identity);
         
         pb.isPowerRunning = false;
@@ -53,7 +60,7 @@ public class StripTrigger : MonoBehaviour
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         delayStripping.GetComponent<PolygonCollider2D>().enabled = true;
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2.5f);
         
         pb.isPowerRunning = true;
         gameObject.GetComponent<PolygonCollider2D>().enabled = true;
@@ -65,6 +72,7 @@ public class StripTrigger : MonoBehaviour
         if (jumlahTelur >= maxJumlahTelur)
         {
             Debug.Log("Win");
+            winPanel.SetActive(true);
         }
     }
 
@@ -76,6 +84,8 @@ public class StripTrigger : MonoBehaviour
         if (countDownCounter <= 0f)
         {
             Debug.Log("Lose");
+
+            losePanel.SetActive(true);
         }
     }
 }
