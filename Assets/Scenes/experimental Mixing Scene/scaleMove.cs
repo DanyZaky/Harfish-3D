@@ -9,11 +9,11 @@ public class scaleMove : MonoBehaviour
     [SerializeField] GameObject maxBar;
     [SerializeField] GameObject minBar;
     float scaleSpeed= 2f;
-    float defaultScaleSpeed = 3f;
+    [SerializeField]float defaultScaleSpeed = 3f;
     void Start()
     {
         stirrObj = GameObject.Find("buat ngaduk").GetComponent<movementSpeed>();
-        transform.position = maxBar.transform.position;
+        transform.position = minBar.transform.position;
     }
 
     // Update is called once per frame
@@ -27,6 +27,13 @@ public class scaleMove : MonoBehaviour
                 scaleSpeed = 0;
             }
             transform.Translate(Vector2.up * scaleSpeed * Time.deltaTime);
+        }
+        if(stirrMoveSpeed > 0){
+            scaleSpeed = defaultScaleSpeed;
+            if(transform.position.x >= maxBar.transform.position.x){
+                scaleSpeed =0 ;
+            }
+            transform.Translate(Vector2.down * (scaleSpeed + (scaleSpeed * stirrMoveSpeed/80))*Time.deltaTime);
         }
         // if speed diatas 10
         // if speed diatas 20
