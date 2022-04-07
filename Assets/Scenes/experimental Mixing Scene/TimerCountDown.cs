@@ -11,22 +11,31 @@ public class TimerCountDown : MonoBehaviour
     public Text myText;
     public Color warningColor;
     public Color allertCollor;
+    public bool isStart = false;
     void Start()
     {
+        myText.text = CountDownFrom.ToString();
         timeLeft = CountDownFrom;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeLeft = timeLeft - Time.deltaTime;
-        int count = ((int)timeLeft);
-        // if (count < 60 && count >=30){
-        //     myText.color = warningColor;
-        // }
-        // if(count < 30){
-        //     myText.color = allertCollor;
-        // }
-        myText.text = count.ToString();
+        if(isStart == true){
+            timeLeft = timeLeft - Time.deltaTime;
+            int count = ((int)timeLeft);
+            // if (count < 60 && count >=30){
+            //     myText.color = warningColor;
+            // }
+            // if(count < 30){
+            //     myText.color = allertCollor;
+            // }
+            myText.text = count.ToString();
+        }
+
+    }
+
+    public void setIsStarting(){
+        isStart = true;
     }
 }
