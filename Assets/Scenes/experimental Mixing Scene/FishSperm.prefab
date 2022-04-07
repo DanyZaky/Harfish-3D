@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3320582317175349407}
   - component: {fileID: 3320582317175349392}
   m_Layer: 6
-  m_Name: FishEgg
-  m_TagString: egg
+  m_Name: FishSperm
+  m_TagString: sperm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
