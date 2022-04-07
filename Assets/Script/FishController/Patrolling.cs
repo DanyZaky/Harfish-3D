@@ -9,6 +9,7 @@ public class Patrolling : MonoBehaviour
     public float startWaitTime;
 
     [SerializeField] private Transform[] moveSpots;
+    [SerializeField] private GameObject ikanMas;
     private int randomSpot;
 
     private FishNeededManager fnm;
@@ -56,13 +57,13 @@ public class Patrolling : MonoBehaviour
                 if (isRotate == true)
                 {
                     rotationValue -= 10;
-                    transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
+                    ikanMas.transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
                     
                     if(rotationValue <= 0)
                     {
                         isRotate = false;
                         rotationValue = 0;
-                        transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
+                        ikanMas.transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
                     }
                 }
             }
@@ -73,13 +74,13 @@ public class Patrolling : MonoBehaviour
                 if (isRotate == true)
                 {
                     rotationValue += 10;
-                    transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
+                    ikanMas.transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
 
                     if (rotationValue >= 180)
                     {
                         isRotate = false;
                         rotationValue = 180;
-                        transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
+                        ikanMas.transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
                     }
                 }
             }
