@@ -24,6 +24,9 @@ public class StripTrigger : MonoBehaviour
     [SerializeField] private CanvasGroup panelTutorial1, panelTutorial2, panelTutorial3, panelTutorial4;
     public bool isTutorial;
 
+
+    [SerializeField] private float moveFilledBowl;
+
     void Start()
     {
         pb = GameObject.Find("PowerBar").GetComponent<PowerBar>();
@@ -54,7 +57,7 @@ public class StripTrigger : MonoBehaviour
         if (pb.powerCountCounter <= 130f && pb.powerCountCounter >= -130f)
         {
             pb.isPowerRunning = false;
-            filledBowl.transform.position -= new Vector3(0f, 0f, 0.2f);
+            filledBowl.transform.position -= new Vector3(0f, 0f, moveFilledBowl);
             jumlahTelur += Random.Range(50.0f, 52.3f);
             jumalhTelurText.SetText("Jumlah Telur : " + jumlahTelur.ToString(".0") + "ml");
             progressBar.fillAmount = jumlahTelur / maxJumlahTelur;
