@@ -2,39 +2,61 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Suntik : MonoBehaviour
 {
-    [SerializeField] private float duration, currentDuration;
-    private bool isDurating;
-    private GetChildText gct;
+    [SerializeField] private GameObject colIkanJantan, colIkanBetina1, colIkanBetina2, pijahButton, suntikGameobj;
+    [SerializeField] private Button suntikJantanBtn, suntikBetinaBtn;
+    [SerializeField] private FishSuntikTrigger fstIkanJantan, fstIkanBetina1, fstIkanBetina2;
     void Start()
     {
-        currentDuration = duration;
-        isDurating = false;
-        //gct.textDuration.SetActive(false);
+        colIkanJantan.GetComponent<BoxCollider2D>().enabled = false;
+        colIkanBetina1.GetComponent<BoxCollider2D>().enabled = false;
+        colIkanBetina2.GetComponent<BoxCollider2D>().enabled = false;
+
+        suntikJantanBtn.interactable = true;
+        suntikBetinaBtn.interactable = true;
+
+        pijahButton.SetActive(false);
     }
 
     void Update()
     {
-        if(isDurating == true)
+        if(fstIkanJantan.isSiapPijah == true && fstIkanBetina1.isSiapPijah == true && fstIkanBetina2.isSiapPijah == true)
         {
-            currentDuration -= 1f * Time.deltaTime;
-
-            if (currentDuration <= 0f)
-            {
-                isDurating = false;
-                currentDuration = duration;
-
-                Debug.Log("Siap ");
-            }
+            pijahButton.SetActive(true);
         }
 
-        Debug.Log(currentDuration.ToString("0"));
+        if(fstIkanJantan.isTerpijah == true)
+        {
+            suntikJantanBtn.interactable = false;
+        }
+
+        if(fstIkanBetina1.isTerpijah == true && fstIkanBetina2.isTerpijah == true)
+        {
+            suntikBetinaBtn.interactable = false;
+        }
     }
-    private void OnMouseDown()
+
+    public void buttonSuntikJantan()
     {
-        Debug.Log("tyersuntik");
-        isDurating = true;
+        colIkanJantan.GetComponent<BoxCollider2D>().enabled = true;
+
+        suntikJantanBtn.interactable = false;
+        suntikBetinaBtn.interactable = false;
+
+        suntikGameobj.SetActive(true);
+    }
+
+    public void buttonSuntikBetina()
+    {
+        colIkanBetina1.GetComponent<BoxCollider2D>().enabled = true;
+        colIkanBetina2.GetComponent<BoxCollider2D>().enabled = true;
+
+        suntikJantanBtn.interactable = false;
+        suntikBetinaBtn.interactable = false;
+
+        suntikGameobj.SetActive(true);
     }
 }

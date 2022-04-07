@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/StrippingFeature.unity
+    path: Assets/Scenes/StrippingBetina.unity
     guid: 10e74b574cdf4344dab9539024065736
   m_configObjects: {}
