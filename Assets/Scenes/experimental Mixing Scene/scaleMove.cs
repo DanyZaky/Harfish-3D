@@ -6,6 +6,7 @@ public class scaleMove : MonoBehaviour
 {
     // Start is called before the first frame update
     movementSpeed stirrObj;
+    finalEggResult myFinalEgg;
     [SerializeField] GameObject maxBar;
     [SerializeField] GameObject minBar;
     float scaleSpeed= 2f;
@@ -13,6 +14,7 @@ public class scaleMove : MonoBehaviour
     void Start()
     {
         stirrObj = GameObject.Find("buat ngaduk").GetComponent<movementSpeed>();
+        myFinalEgg = GameObject.Find("HasilTelurVar").GetComponent<finalEggResult>();
         transform.position = minBar.transform.position;
     }
 
@@ -25,10 +27,14 @@ public class scaleMove : MonoBehaviour
             // Debug.Log("true");
             if(transform.position.x <= minBar.transform.position.x){
                 scaleSpeed = 0;
+                // if (fisrtMove){
+                //     myFinalEgg.decreaseEgg();
+                // }
             }
             transform.Translate(Vector2.up * scaleSpeed * Time.deltaTime);
         }
         if(stirrMoveSpeed > 0){
+            // fisrtMove = true;
             scaleSpeed = defaultScaleSpeed;
             if(transform.position.x >= maxBar.transform.position.x){
                 scaleSpeed =0 ;
