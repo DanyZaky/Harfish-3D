@@ -12,10 +12,14 @@ public class TimerCountDown : MonoBehaviour
     public Color warningColor;
     public Color allertCollor;
     public bool isStart = false;
+
+    [SerializeField] private GameObject winPanel;
     void Start()
     {
         myText.text = CountDownFrom.ToString();
         timeLeft = CountDownFrom;
+
+        winPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,7 +35,16 @@ public class TimerCountDown : MonoBehaviour
             //     myText.color = allertCollor;
             // }
             myText.text = count.ToString();
+
+            if (timeLeft <= 0)
+            {
+                winPanel.SetActive(true);
+                timeLeft = 0f;
+                isStart = false;
+            }
         }
+
+        
 
     }
 

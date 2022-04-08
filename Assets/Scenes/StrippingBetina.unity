@@ -1983,7 +1983,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 654074132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1357423494}
+        m_TargetAssemblyTypeName: SceneManagementt, Assembly-CSharp
+        m_MethodName: nextScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &654074132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2833,7 +2845,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 909377486}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1357423494}
+        m_TargetAssemblyTypeName: SceneManagementt, Assembly-CSharp
+        m_MethodName: nextScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &909377486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4220,7 +4244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1207322058
 Light:
   m_ObjectHideFlags: 0
@@ -4233,7 +4257,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4532,6 +4556,7 @@ GameObject:
   - component: {fileID: 1357423493}
   - component: {fileID: 1357423492}
   - component: {fileID: 1357423491}
+  - component: {fileID: 1357423494}
   m_Layer: 0
   m_Name: Trigger Stripping
   m_TagString: Untagged
@@ -4551,7 +4576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a67c922f91a8c4fa8dcf8b3119b289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJumlahTelur: 500
+  maxJumlahTelur: 300
   progressBar: {fileID: 1666169358}
   jumalhTelurText: {fileID: 1604991305}
   countdownText: {fileID: 1526486211}
@@ -4623,6 +4648,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1357423494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357423490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ded8007d2891c4298b18bf868979ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1391185949
 GameObject:
   m_ObjectHideFlags: 0
@@ -5945,7 +5982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1604991304
 RectTransform:
   m_ObjectHideFlags: 0
