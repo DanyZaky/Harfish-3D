@@ -75,7 +75,7 @@ public class StripTrigger : MonoBehaviour
         if (pb.powerCountCounter > 130f || pb.powerCountCounter < -130f)
         {
             Debug.Log("Marah");
-
+            
             pb.isPowerRunning = false;
             StartCoroutine(marahAnimation());
         }
@@ -90,6 +90,7 @@ public class StripTrigger : MonoBehaviour
         yield return new WaitForSeconds(dur1);
 
         Instantiate(prefabsSelTelur, pos, Quaternion.Euler(-90f, 0f, 0f));
+        SoundManager.Instance.PlaySFX("SFX Dropping");
 
         yield return new WaitForSeconds(dur2);
 
@@ -108,6 +109,7 @@ public class StripTrigger : MonoBehaviour
 
         yield return new WaitForSeconds(0.7f);
 
+        SoundManager.Instance.PlaySFX("SFX Angry");
         fishAnim.Play("angryFish");
 
         yield return new WaitForSeconds(1.7f);
@@ -125,6 +127,7 @@ public class StripTrigger : MonoBehaviour
         if (jumlahTelur >= maxJumlahTelur)
         {
             winPanel.SetActive(true);
+            SoundManager.Instance.PlaySFX("SFX Win");
             isGameOver = true;
             pb.isPowerRunning = false;
         }
@@ -144,27 +147,32 @@ public class StripTrigger : MonoBehaviour
             isGameOver = true;
             pb.isPowerRunning = false;
             losePanel.SetActive(true);
+            SoundManager.Instance.PlaySFX("SFX Lose");
         }
     }
 
     public void buttonTutorial1()
     {
+        SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(SmoothFadeTransition(panelTutorial1, panelTutorial2, 0.4f));
     }
 
     public void buttonTutorial2()
     {
+        SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(FadeOut(panelTutorial2, 0.4f));
         gameObject.GetComponent<PolygonCollider2D>().enabled = true;
     }
 
     public void buttonTutorial3()
     {
+        SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(SmoothFadeTransition(panelTutorial3, panelTutorial4, 0.4f));
     }
 
     public void buttonTutorial4()
     {
+        SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(FadeOut(panelTutorial4, 0.4f));
         gameObject.GetComponent<PolygonCollider2D>().enabled = true;
     }

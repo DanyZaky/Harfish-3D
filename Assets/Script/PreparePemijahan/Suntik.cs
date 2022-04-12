@@ -42,6 +42,7 @@ public class Suntik : MonoBehaviour
     public void buttonSuntikJantan()
     {
         colIkanJantan.GetComponent<BoxCollider2D>().enabled = true;
+        SoundManager.Instance.PlaySFX("SFX Button");
 
         suntikJantanBtn.interactable = false;
         suntikBetinaBtn.interactable = false;
@@ -53,6 +54,7 @@ public class Suntik : MonoBehaviour
     {
         colIkanBetina1.GetComponent<BoxCollider2D>().enabled = true;
         colIkanBetina2.GetComponent<BoxCollider2D>().enabled = true;
+        SoundManager.Instance.PlaySFX("SFX Button");
 
         suntikJantanBtn.interactable = false;
         suntikBetinaBtn.interactable = false;

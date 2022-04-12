@@ -49,6 +49,7 @@ public class FishSuntikTrigger : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Tersuntik");
+        SoundManager.Instance.PlaySFX("SFX Inject");
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
         suntikJantanBtn.interactable = true;
