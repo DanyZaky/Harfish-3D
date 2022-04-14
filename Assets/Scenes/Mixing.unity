@@ -14228,7 +14228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71916c59a852c38499a347c76dea83cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountDownFrom: 40
+  CountDownFrom: 15
   timeLeft: 120
   myText: {fileID: 2025662385}
   warningColor: {r: 0.7169812, g: 0.6567681, b: 0, a: 0}

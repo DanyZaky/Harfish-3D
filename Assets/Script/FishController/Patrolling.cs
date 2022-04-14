@@ -19,7 +19,6 @@ public class Patrolling : MonoBehaviour
 
     void Start()
     {
-        // Debug.Log(fishSprite.flipX);
         fnm = GameObject.Find("FishNeededManager").GetComponent<FishNeededManager>();
 
         for (int i = 0; i < 23; i++)
