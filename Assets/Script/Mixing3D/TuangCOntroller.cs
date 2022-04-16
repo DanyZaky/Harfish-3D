@@ -7,20 +7,12 @@ public class TuangCOntroller : MonoBehaviour
 {
     [SerializeField] GameObject bowl;
     [SerializeField] Slider tuangSlider;
+    [SerializeField] float maxRotate;
+    private float rotateZ;
 
-    private float rotateValue, rotateZ;
-    void Start()
-    {
-        
-        
-        
-    }
     void Update()
     {
         bowl.transform.rotation = Quaternion.Euler(0, 0, rotateZ);
-
-        rotateZ = tuangSlider.value * -180;
-
-        Debug.Log(tuangSlider.value);
+        rotateZ = tuangSlider.value * maxRotate;
     }
 }
