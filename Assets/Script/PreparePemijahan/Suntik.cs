@@ -25,6 +25,7 @@ public class Suntik : MonoBehaviour
     {
         if(fstIkanJantan.isSiapPijah == true && fstIkanBetina1.isSiapPijah == true && fstIkanBetina2.isSiapPijah == true)
         {
+            SoundManager.Instance.PlaySFX("SFX Win");
             pijahButton.SetActive(true);
         }
 

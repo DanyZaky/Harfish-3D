@@ -11,13 +11,11 @@ public class DragFeather : MonoBehaviour
 	{
 		screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 		offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-		Debug.Log("test");
 	}
 
 	void OnMouseDrag()
 	{
 		Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 		transform.position = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
-		Debug.Log("testttttttttttt");
 	}
 }

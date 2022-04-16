@@ -22,6 +22,7 @@ public class ProgressBars : MonoBehaviour
     {
         if(col.gameObject.tag=="Telur")
         {
+            SoundManager.Instance.PlaySFX("SFX Dropping");
             currentJumlahTelur = currentJumlahTelur + 1;
             progressbarfill.fillAmount = currentJumlahTelur / maksJumlahTelur;
             Debug.Log("tersentuh"+currentJumlahTelur);

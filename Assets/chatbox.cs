@@ -12,6 +12,7 @@ public class chatbox : MonoBehaviour
     public void OnMouseDown()
     {
         chat.SetActive(chatboxmuncul);
+        SoundManager.Instance.PlaySFX("SFX Button");
     }
 }
     

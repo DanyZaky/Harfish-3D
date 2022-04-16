@@ -21,6 +21,7 @@ public class JumlahTelur : MonoBehaviour
         if(col.gameObject.tag == "Telur")
         {
             jmlTelur += 1;
+            SoundManager.Instance.PlaySFX("SFX Dropping");
         }
     }
 
