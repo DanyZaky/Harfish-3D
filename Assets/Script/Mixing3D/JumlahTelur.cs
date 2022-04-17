@@ -20,7 +20,7 @@ public class JumlahTelur : MonoBehaviour
     {
         if(col.gameObject.tag == "Telur")
         {
-            jmlTelur += 1;
+            jmlTelur += (Random.Range(0f, 5f) + 20f);
             SoundManager.Instance.PlaySFX("SFX Dropping");
         }
     }
@@ -29,7 +29,7 @@ public class JumlahTelur : MonoBehaviour
     {
         if (col.gameObject.tag == "Telur")
         {
-            jmlTelur -= 1;
+            jmlTelur -= 19f;
         }
     }
 }

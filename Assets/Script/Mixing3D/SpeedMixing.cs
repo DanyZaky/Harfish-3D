@@ -10,18 +10,23 @@ public class SpeedMixing : MonoBehaviour
     Vector3 PreviousFramePosition = Vector3.zero;
     public float speed = 0f;
 
-    [SerializeField] private TextMeshProUGUI telurTeraduk, countdown;
+    [SerializeField] private TextMeshProUGUI telurTeraduk, countdown, scoreMixing;
     [SerializeField] private Image progressTeraduk;
     [SerializeField] private JumlahTelur jt;
-    [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject winPanel, telurPrefabs, spermaPrefabs;
 
     [SerializeField] private float cd;
 
     [SerializeField] private CanvasGroup tutorPanel1, tutorPanel2, tutorPanel3;
     private float currentCD;
-    private bool isGameOver, isMixing;
+    private bool isGameOver;
 
     private float telurTeradukCount;
+
+    private bool isWin, isMixing;
+
+    Vector3 spermPos = new Vector3(0.222f, 1.627f, -8.5852f);
+    Vector3 telurPos = new Vector3(-0.1901f, 1.627f, -8.5852f);
 
     private void Start()
     {
@@ -31,8 +36,21 @@ public class SpeedMixing : MonoBehaviour
         isGameOver = true;
 
         winPanel.SetActive(false);
+        isWin = true;
 
         isMixing = false;
+
+        //Debug.Log("telur = " + PlayerPrefs.GetFloat("TelurCount").ToString("0") + "|| sperma = " + PlayerPrefs.GetFloat("SpermaCount").ToString("0"));
+
+        for (int i = 0; i < ((int)(PlayerPrefs.GetFloat("SpermaCount") / 10)); i++)
+        {
+            Instantiate(spermaPrefabs, spermPos, Quaternion.identity);
+        }
+
+        for (int i = 0; i < ((int)(PlayerPrefs.GetFloat("TelurCount") / 20)); i++)
+        {
+            Instantiate(telurPrefabs, telurPos, Quaternion.identity);
+        }
     }
 
     void Update()
@@ -56,7 +74,7 @@ public class SpeedMixing : MonoBehaviour
 
         if (speed >= 1f)
         {
-            telurTeradukCount += 1f * Time.deltaTime;
+            telurTeradukCount += Random.Range(19f, 25f) * Time.deltaTime;
             telurTeraduk.SetText(telurTeradukCount.ToString("0"));
             //SoundManager.Instance.PlaySFX("SFX Mixing");
             progressTeraduk.fillAmount = telurTeradukCount / jt.jmlTelur;
@@ -89,9 +107,16 @@ public class SpeedMixing : MonoBehaviour
                 currentCD = 0;
                 countdown.SetText(currentCD.ToString("0"));
                 isGameOver = true;
-                SoundManager.Instance.PlaySFX("SFX Win");
+                if (isWin)
+                {
+                    SoundManager.Instance.PlaySFX("SFX Win");
+                    isWin = false;
+                }
 
+                scoreMixing.SetText(telurTeradukCount.ToString("0"));
                 winPanel.SetActive(true);
+
+                PlayerPrefs.SetFloat("MixingCount", telurTeradukCount);
             }
         }
     }
