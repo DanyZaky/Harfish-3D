@@ -13,13 +13,17 @@ public class timer : MonoBehaviour
     public int startSeconds;
     public TextMeshProUGUI currentTimeText;
     public GameObject kalah;
-    
-    
+
+    private bool isWin;
+
+    [SerializeField] private ProgressBars pb;
     
     // Start is called before the first frame update
     void Start()
     {
         currentTime = startSeconds * 1;
+        isWin = true;
+
         
     }
     
@@ -41,6 +45,15 @@ public class timer : MonoBehaviour
                 kalah.SetActive(timeisup);
                 ikan = false;
                 Debug.Log("waktu habis");
+
+                if (isWin)
+                {
+                    SoundManager.Instance.PlaySFX("SFX Win");
+                    isWin = false;
+                }
+
+                PlayerPrefs.SetFloat("TerpijahCount", pb.currentJumlahTelur);
+                pb.hasilPijahText.SetText(PlayerPrefs.GetFloat("TerpijahCount").ToString("0"));
             }
         }
         TimeSpan time = TimeSpan.FromSeconds(currentTime);

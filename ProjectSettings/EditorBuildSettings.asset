@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/StrippingJantan.unity
     guid: 2847b584ab58d4d42bacc30bcb2d50b6
   - enabled: 1
-    path: Assets/Scenes/Mixing.unity
-    guid: 2c262a23f1edb3d41a420289d6156865
+    path: Assets/Scenes/Mixing 3d.unity
+    guid: 31cb44e8d5d6ed741b36508dd9c612a5
   - enabled: 1
     path: Assets/Scenes/drag and drop.unity
     guid: df918ec13a8f52b42a65ee5099bc7f8a

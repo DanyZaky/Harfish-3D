@@ -9,6 +9,8 @@ public class Suntik : MonoBehaviour
     [SerializeField] private GameObject colIkanJantan, colIkanBetina1, colIkanBetina2, pijahButton, suntikGameobj;
     [SerializeField] private Button suntikJantanBtn, suntikBetinaBtn;
     [SerializeField] private FishSuntikTrigger fstIkanJantan, fstIkanBetina1, fstIkanBetina2;
+
+    private bool isWin;
     void Start()
     {
         colIkanJantan.GetComponent<BoxCollider2D>().enabled = false;
@@ -19,12 +21,19 @@ public class Suntik : MonoBehaviour
         suntikBetinaBtn.interactable = true;
 
         pijahButton.SetActive(false);
+
+        isWin = true;
     }
 
     void Update()
     {
         if(fstIkanJantan.isSiapPijah == true && fstIkanBetina1.isSiapPijah == true && fstIkanBetina2.isSiapPijah == true)
         {
+            if (isWin)
+            {
+                SoundManager.Instance.PlaySFX("SFX Win");
+                isWin = false;
+            }
             pijahButton.SetActive(true);
         }
 

@@ -13,7 +13,7 @@ public class StripTrigger : MonoBehaviour
     [SerializeField] private float maxJumlahTelur;
     [SerializeField] private Image progressBar;
 
-    [SerializeField] private TextMeshProUGUI jumalhTelurText, countdownText;
+    [SerializeField] private TextMeshProUGUI jumalhTelurText, countdownText, currentScore;
     [SerializeField] private GameObject delayStripping, prefabsSelTelur, winPanel, losePanel, filledBowl;
 
     [SerializeField] private float countDown;
@@ -23,9 +23,11 @@ public class StripTrigger : MonoBehaviour
 
     [SerializeField] private CanvasGroup panelTutorial1, panelTutorial2, panelTutorial3, panelTutorial4;
     public bool isTutorial;
-
+    [SerializeField]private bool isWin;
 
     [SerializeField] private float moveFilledBowl;
+    [SerializeField] private float selCount;
+    [SerializeField] private string nameValue;
 
     void Start()
     {
@@ -39,10 +41,11 @@ public class StripTrigger : MonoBehaviour
         winPanel.SetActive(false);
         losePanel.SetActive(false);
 
-        isGameOver = false;
+        isGameOver = true;
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
 
         isTutorial = true;
+        isWin = true;
     }
 
     void Update()
@@ -58,8 +61,8 @@ public class StripTrigger : MonoBehaviour
         {
             pb.isPowerRunning = false;
             filledBowl.transform.position -= new Vector3(0f, 0f, moveFilledBowl);
-            jumlahTelur += Random.Range(50.0f, 52.3f);
-            jumalhTelurText.SetText("Jumlah Telur : " + jumlahTelur.ToString(".0") + "ml");
+            jumlahTelur += (Random.Range(0.5f, 2.3f) + selCount);
+            jumalhTelurText.SetText(jumlahTelur.ToString("0"));
             progressBar.fillAmount = jumlahTelur / maxJumlahTelur;
             StartCoroutine(strippingAnimation(handAnim ,"stripping","idle", new Vector3(-1.67f, -1.64f, -7.54f), 0.5f, 2.0f));
             gameObject.GetComponent<PolygonCollider2D>().enabled = false;
@@ -90,7 +93,7 @@ public class StripTrigger : MonoBehaviour
         yield return new WaitForSeconds(dur1);
 
         Instantiate(prefabsSelTelur, pos, Quaternion.Euler(-90f, 0f, 0f));
-        SoundManager.Instance.PlaySFX("SFX Dropping");
+        SoundManager.Instance.PlaySFX("SFX Mixing");
 
         yield return new WaitForSeconds(dur2);
 
@@ -126,10 +129,19 @@ public class StripTrigger : MonoBehaviour
         //WIN
         if (jumlahTelur >= maxJumlahTelur)
         {
+            if(isWin)
+            {
+                SoundManager.Instance.PlaySFX("SFX Win");
+                isWin = false;
+            }
+            
             winPanel.SetActive(true);
-            SoundManager.Instance.PlaySFX("SFX Win");
+            
             isGameOver = true;
             pb.isPowerRunning = false;
+            gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+            PlayerPrefs.SetFloat(nameValue, jumlahTelur);
+            currentScore.SetText(PlayerPrefs.GetFloat(nameValue).ToString("0"));
         }
     }
 
@@ -146,8 +158,15 @@ public class StripTrigger : MonoBehaviour
         {
             isGameOver = true;
             pb.isPowerRunning = false;
-            losePanel.SetActive(true);
-            SoundManager.Instance.PlaySFX("SFX Lose");
+            winPanel.SetActive(true);
+            if (isWin)
+            {
+                SoundManager.Instance.PlaySFX("SFX Win");
+                isWin = false;
+            }
+            gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+            PlayerPrefs.SetFloat(nameValue, jumlahTelur);
+            currentScore.SetText(PlayerPrefs.GetFloat(nameValue).ToString("0"));
         }
     }
 
@@ -162,6 +181,7 @@ public class StripTrigger : MonoBehaviour
         SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(FadeOut(panelTutorial2, 0.4f));
         gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+        isGameOver = false;
     }
 
     public void buttonTutorial3()
