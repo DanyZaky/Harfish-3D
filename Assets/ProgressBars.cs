@@ -67,9 +67,14 @@ public class ProgressBars : MonoBehaviour
             menang.SetActive(aktif);
             timer.FindObjectOfType<timer>().ikan = false;
             timer.FindObjectOfType<timer>().timerActive = false;
+            
+            hasilPijahText.SetText(currentJumlahTelur.ToString("0"));
 
-            PlayerPrefs.SetFloat("TerpijahCount", currentJumlahTelur);
-            hasilPijahText.SetText(PlayerPrefs.GetFloat("TerpijahCount").ToString("0"));
+            if(currentJumlahTelur > PlayerPrefs.GetFloat("TerpijahCount"))
+            {
+                PlayerPrefs.SetFloat("TerpijahCount", currentJumlahTelur);
+            }
+            
 
             //Destroy(GameObject.Find("Telur Mixed(Clone)"));
 
