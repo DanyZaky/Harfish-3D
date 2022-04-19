@@ -38,13 +38,6 @@ public class scoreboardController : MonoBehaviour
                     score[i].text = allMember[i].score.ToString();
                     playerName[i].text = allMember[i].member_id;
                 }
-
-                // if (allMember.Length < 10){
-                //     for(int i = allMember.Length; i < 10; i++){
-                //     score[i].text = "???";
-                //     playerName[i].text = "none";
-                //     }
-                // }
             }else{
                 Debug.Log("failed: " + response.Error);
             }
