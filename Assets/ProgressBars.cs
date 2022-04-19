@@ -18,7 +18,7 @@ public class ProgressBars : MonoBehaviour
     [SerializeField] public TextMeshProUGUI terpijahText, hasilPijahText;
 
     [SerializeField] private GameObject teluraMixedPrefabs;
-    Vector3 pos = new Vector3(59.2f, 46f, -174f);
+    Vector3 pos = new Vector3(59.2f, 50f, -174f);
 
     private void Start()
     {
@@ -34,13 +34,15 @@ public class ProgressBars : MonoBehaviour
             Instantiate(teluraMixedPrefabs, pos, Quaternion.identity);
             pos.y += 10f;
         }
+
+        Debug.Log(maksJumlahTelur);
     }
     private void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag=="Telur")
         {
             SoundManager.Instance.PlaySFX("SFX Dropping");
-            currentJumlahTelur += (Random.Range(0f, 1f) + 20f);
+            currentJumlahTelur += (Random.Range(1f, 3f) + 20f);
             progressbarfill.fillAmount = currentJumlahTelur / maksJumlahTelur;
             Debug.Log("tersentuh"+currentJumlahTelur);
 
@@ -51,7 +53,7 @@ public class ProgressBars : MonoBehaviour
     {
         if (col.gameObject.tag == "Telur")
         {
-            currentJumlahTelur = currentJumlahTelur - 20f;
+            currentJumlahTelur = currentJumlahTelur - 22f;
             progressbarfill.fillAmount = currentJumlahTelur / maksJumlahTelur;
             Debug.Log("telur terangkat");
 
