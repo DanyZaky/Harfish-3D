@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.lootlocker.lootlockersdk": "https://github.com/LootLocker/unity-sdk.git",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.animation.rigging": "1.0.3",
     "com.unity.collab-proxy": "1.15.12",
