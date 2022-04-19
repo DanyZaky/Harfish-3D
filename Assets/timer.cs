@@ -52,7 +52,11 @@ public class timer : MonoBehaviour
                     isWin = false;
                 }
 
-                PlayerPrefs.SetFloat("TerpijahCount", pb.currentJumlahTelur);
+                if (pb.currentJumlahTelur > PlayerPrefs.GetFloat("TerpijahCount"))
+                {
+                    PlayerPrefs.SetFloat("TerpijahCount", pb.currentJumlahTelur);
+                }
+
                 pb.hasilPijahText.SetText(PlayerPrefs.GetFloat("TerpijahCount").ToString("0"));
             }
         }

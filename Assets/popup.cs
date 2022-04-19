@@ -16,9 +16,12 @@ public class popup : MonoBehaviour
     public void OnMouseDown()
     {
         muncul.SetActive(aktif);
+        SoundManager.Instance.PlaySFX("SFX Button");
     }
     public void tekanbuttonplay()
     {
+        //StartCoroutine(SmoothFadeTransition(mainMenuPanel, selectMenuPanel, 0.4f));
+        SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(FadeOut(mainMenuPanel, 0.5f));
         StartCoroutine(FadeIn(selectMenuPanel, 0.5f));
     }
@@ -40,5 +43,12 @@ public class popup : MonoBehaviour
         yield return new WaitForSecondsRealtime(duration);
         container.gameObject.SetActive(false);
         container.interactable = true;
+    }
+
+    public IEnumerator SmoothFadeTransition(CanvasGroup panel1, CanvasGroup panel2, float duration)
+    {
+        StartCoroutine(FadeOut(panel1, duration));
+        yield return new WaitForSecondsRealtime(duration);
+        StartCoroutine(FadeIn(panel2, duration));
     }
 }
