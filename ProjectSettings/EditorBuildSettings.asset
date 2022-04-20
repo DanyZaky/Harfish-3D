@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: ff07c60f289c9724da810c833fee98b5
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Gameplay 1.unity
+    guid: e32bb0c37d7e9e346ae9fde8c7946cda
   - enabled: 1
     path: Assets/Scenes/StrippingBetina.unity
     guid: 10e74b574cdf4344dab9539024065736

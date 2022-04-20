@@ -63934,7 +63934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.1742, y: 22.148317}
+  m_AnchoredPosition: {x: 5.1742, y: -48}
   m_SizeDelta: {x: 714.2365, y: 156.1794}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037490699
@@ -74535,8 +74535,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -66, y: 132.19}
-  m_SizeDelta: {x: 791.8849, y: 264.3807}
+  m_AnchoredPosition: {x: -66, y: 165.55602}
+  m_SizeDelta: {x: 791.8849, y: 197.6579}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264401692
 MonoBehaviour:
@@ -84634,8 +84634,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dan untuk ikan yang jantan, gunakan tombol ini yaa! ciri ciri ikan jantan
-    dapat dilihat pada kondisi perut ikan yang normal
+  m_text: Untuk ikan yang jantan, gunakan tombol ini yaa! ciri ciri ikan jantan dapat
+    dilihat pada kondisi perut ikan yang normal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52deee9f77593e844882b60e4d50cc07, type: 2}
   m_sharedMaterial: {fileID: 7040782005808225442, guid: 52deee9f77593e844882b60e4d50cc07, type: 2}
@@ -129917,7 +129917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Gunakan tombil suntikan ini untuk ikan betina ya! Ikan betina yang siap
+  m_text: 'Gunakan tombol suntikan ini untuk ikan betina ya! Ikan betina yang siap
     melepas sel telur memiliki ciri ciri perut yang besar
 
 '
@@ -136244,7 +136244,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Sebelum melakukan pemijahan, yuk kita berikan setiap ikan satu kali suntikan
-    oviparm! Hal ini dapat membuat ikan yang akan dipijah menghasilkan sel telur
+    Ovaprim! Hal ini dapat membuat ikan yang akan dipijah menghasilkan sel telur
     atau sel sperma yang lebih banyak lho!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52deee9f77593e844882b60e4d50cc07, type: 2}
