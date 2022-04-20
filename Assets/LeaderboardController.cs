@@ -1,11 +1,13 @@
 using UnityEngine.UI;
 using LootLocker.Requests;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LeaderboardController : MonoBehaviour
 {
     public InputField PlayerUsername;
-    public Text score;
+    public TextMeshProUGUI hScore;
     public int ID;
     int sessionID;
 
@@ -22,7 +24,7 @@ public class LeaderboardController : MonoBehaviour
     }
 
     public void submitScore(){
-        LootLockerSDKManager.SubmitScore(PlayerUsername.text, int.Parse(score.text), 2472, (response) =>
+        LootLockerSDKManager.SubmitScore(PlayerUsername.text, int.Parse(hScore.text), 2472, (response) =>
         {
             if (response.statusCode == 200) {
                 Debug.Log("Successful");
@@ -30,5 +32,8 @@ public class LeaderboardController : MonoBehaviour
                 Debug.Log("failed: " + response.Error);
             }
         });
+
+        SceneManager.LoadScene(0);
+        SoundManager.Instance.PlaySFX("SFX Button");
     }
 }

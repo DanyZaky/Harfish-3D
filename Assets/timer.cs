@@ -52,12 +52,14 @@ public class timer : MonoBehaviour
                     isWin = false;
                 }
 
+                pb.hasilPijahText.SetText(pb.currentJumlahTelur.ToString("0"));
+
                 if (pb.currentJumlahTelur > PlayerPrefs.GetFloat("TerpijahCount"))
                 {
                     PlayerPrefs.SetFloat("TerpijahCount", pb.currentJumlahTelur);
                 }
 
-                pb.hasilPijahText.SetText(PlayerPrefs.GetFloat("TerpijahCount").ToString("0"));
+                pb.highScoreText.SetText(PlayerPrefs.GetFloat("TerpijahCount").ToString("0"));
             }
         }
         TimeSpan time = TimeSpan.FromSeconds(currentTime);

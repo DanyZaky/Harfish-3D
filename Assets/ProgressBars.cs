@@ -15,7 +15,7 @@ public class ProgressBars : MonoBehaviour
 
     private bool isWin;
 
-    [SerializeField] public TextMeshProUGUI terpijahText, hasilPijahText;
+    [SerializeField] public TextMeshProUGUI terpijahText, hasilPijahText, highScoreText;
 
     [SerializeField] private GameObject teluraMixedPrefabs;
     Vector3 pos = new Vector3(59.2f, 50f, -174f);
@@ -76,6 +76,8 @@ public class ProgressBars : MonoBehaviour
             {
                 PlayerPrefs.SetFloat("TerpijahCount", currentJumlahTelur);
             }
+
+            highScoreText.SetText(PlayerPrefs.GetFloat("TerpijahCount").ToString("0"));
             
 
             //Destroy(GameObject.Find("Telur Mixed(Clone)"));
