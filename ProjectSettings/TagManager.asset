@@ -7,6 +7,10 @@ TagManager:
   - sperm
   - egg
   - Telur
+  - Medicine
+  - Feed
+  - suntikJantan
+  - suntikJantanArea
   layers:
   - Default
   - TransparentFX

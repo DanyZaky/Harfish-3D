@@ -13,9 +13,9 @@ public class Suntik : MonoBehaviour
     private bool isWin;
     void Start()
     {
-        colIkanJantan.GetComponent<BoxCollider2D>().enabled = false;
-        colIkanBetina1.GetComponent<BoxCollider2D>().enabled = false;
-        colIkanBetina2.GetComponent<BoxCollider2D>().enabled = false;
+        //colIkanJantan.GetComponent<BoxCollider2D>().enabled = false;
+        //colIkanBetina1.GetComponent<BoxCollider2D>().enabled = false;
+        //colIkanBetina2.GetComponent<BoxCollider2D>().enabled = false;
 
         suntikJantanBtn.interactable = true;
         suntikBetinaBtn.interactable = true;

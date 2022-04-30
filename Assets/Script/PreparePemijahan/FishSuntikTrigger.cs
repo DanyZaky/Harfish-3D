@@ -7,17 +7,18 @@ using UnityEngine.UI;
 public class FishSuntikTrigger : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI tersuntikText;
-    [SerializeField] private GameObject suntikan;
+    [SerializeField] private GameObject tanganPegangIkan, suntikGaming, suntikArea;
+    //[SerializeField] private GameObject suntikan;
     private Button suntikJantanBtn, suntikBetinaBtn;
 
-    private bool isTimeRunning;
+    public bool isTimeRunning;
     public bool isSiapPijah, isTerpijah;
     private float delayPijah = 8f, currentDelayPijah;
 
     private void Start()
     {
-        suntikJantanBtn = GameObject.Find("Suntik Jantan").GetComponent<Button>();
-        suntikBetinaBtn = GameObject.Find("Suntik Betina").GetComponent<Button>();
+        //suntikJantanBtn = GameObject.Find("Suntik Jantan").GetComponent<Button>();
+        //suntikBetinaBtn = GameObject.Find("Suntik Betina").GetComponent<Button>();
 
         isTimeRunning = false;
         isSiapPijah = false;
@@ -25,7 +26,11 @@ public class FishSuntikTrigger : MonoBehaviour
 
         currentDelayPijah = delayPijah;
 
-        suntikan.SetActive(false);
+        tanganPegangIkan.SetActive(false);
+        suntikGaming.SetActive(false);
+        suntikArea.SetActive(false);
+
+        //suntikan.SetActive(false);
     }
 
     private void Update()
@@ -48,15 +53,14 @@ public class FishSuntikTrigger : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Tersuntik");
-        SoundManager.Instance.PlaySFX("SFX Inject");
+        Debug.Log("Dalam Proses Suntik");
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
-        suntikJantanBtn.interactable = true;
-        suntikBetinaBtn.interactable = true;
+        tanganPegangIkan.SetActive(true);
+        suntikGaming.SetActive(true);
+        suntikArea.SetActive(true);
 
-        isTimeRunning = true;
-        isTerpijah = true;
-        suntikan.SetActive(false);
+        //isTimeRunning = true;
+        //isTerpijah = true;
     }
 }
