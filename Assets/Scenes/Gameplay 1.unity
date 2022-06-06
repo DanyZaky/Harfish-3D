@@ -710,7 +710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &53736315
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49576,7 +49576,12 @@ MonoBehaviour:
   tersuntikText: {fileID: 431701341}
   tanganPegangIkan: {fileID: 1295971590}
   suntikGaming: {fileID: 53736314}
-  suntikArea: {fileID: 1222585629}
+  suntikArea: {fileID: 1222585632}
+  suntikNonArea1: {fileID: 2089900593}
+  suntikNonArea2: {fileID: 1089397984}
+  ikanBerita1: {fileID: 1750675575}
+  ikanBetina2: {fileID: 922133770}
+  ikanJantan: {fileID: 930627253}
   isTimeRunning: 0
   isSiapPijah: 0
   isTerpijah: 0
@@ -49723,7 +49728,12 @@ MonoBehaviour:
   tersuntikText: {fileID: 1849292733}
   tanganPegangIkan: {fileID: 307656444}
   suntikGaming: {fileID: 53736314}
-  suntikArea: {fileID: 2089900592}
+  suntikArea: {fileID: 2089900593}
+  suntikNonArea1: {fileID: 1089397984}
+  suntikNonArea2: {fileID: 1222585632}
+  ikanBerita1: {fileID: 1750675575}
+  ikanBetina2: {fileID: 922133770}
+  ikanJantan: {fileID: 930627253}
   isTimeRunning: 0
   isSiapPijah: 0
   isTerpijah: 0
@@ -65182,7 +65192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9623507, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -75329,7 +75339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03268218, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -116046,7 +116056,12 @@ MonoBehaviour:
   tersuntikText: {fileID: 363192494}
   tanganPegangIkan: {fileID: 1295971590}
   suntikGaming: {fileID: 53736314}
-  suntikArea: {fileID: 1089397983}
+  suntikArea: {fileID: 1089397984}
+  suntikNonArea1: {fileID: 2089900593}
+  suntikNonArea2: {fileID: 1222585632}
+  ikanBerita1: {fileID: 1750675575}
+  ikanBetina2: {fileID: 922133770}
+  ikanJantan: {fileID: 930627253}
   isTimeRunning: 0
   isSiapPijah: 0
   isTerpijah: 0
@@ -131780,6 +131795,12 @@ MonoBehaviour:
   fst1: {fileID: 930627255}
   fst2: {fileID: 1750675579}
   fst3: {fileID: 922133771}
+  ikanBerita1: {fileID: 1750675575}
+  ikanBetina2: {fileID: 922133770}
+  ikanJantan: {fileID: 930627253}
+  areaSuntik1: {fileID: 2089900593}
+  areaSuntik2: {fileID: 1089397984}
+  areaSuntik3: {fileID: 1222585632}
   suntikJantan: {fileID: 1752853742}
   suntikBetina1: {fileID: 1283128843}
   suntikBetina2: {fileID: 1417720928}
@@ -138831,7 +138852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

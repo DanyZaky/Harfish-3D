@@ -6,6 +6,9 @@ public class SuntikManager : MonoBehaviour
 {
     [SerializeField] private GameObject tanganPegangIkan, tanganPegangIkanBetina, suntikGaming, suntikArea1, suntikArea2, suntikArea3, suntikan1, suntikan2, suntikan3, buttonPijah;
     [SerializeField] private FishSuntikTrigger fst1, fst2, fst3;
+    [SerializeField] private GameObject ikanBerita1, ikanBetina2, ikanJantan;
+    [SerializeField] private RectTransform areaSuntik1, areaSuntik2, areaSuntik3;
+
     public GameObject suntikJantan, suntikBetina1, suntikBetina2, suntikJantanBlack, suntikBetina1Black, suntikBetina2Black;
     Vector2 suntikJantanPos, suntikBetina1Pos, suntikBetina2Pos;
     void Start()
@@ -51,6 +54,8 @@ public class SuntikManager : MonoBehaviour
 
         if(Distance < 50f)
         {
+            Debug.Log("kena ikan jantan");
+            
             suntikJantan.transform.position = suntikJantanBlack.transform.position;
             SoundManager.Instance.PlaySFX("SFX Inject");
 
@@ -58,6 +63,14 @@ public class SuntikManager : MonoBehaviour
             suntikGaming.SetActive(false);
             suntikArea1.SetActive(false);
             suntikan1.SetActive(false);
+
+            ikanJantan.SetActive(true);
+            ikanBerita1.SetActive(true);
+            ikanBetina2.SetActive(true);
+
+            areaSuntik1.anchoredPosition = new Vector2(17.865f, 156.94f);
+            areaSuntik2.anchoredPosition = new Vector2(17.865f, 156.94f);
+            areaSuntik3.anchoredPosition = new Vector2(17.865f, 156.94f);
 
             fst1.isTimeRunning = true;
         }
@@ -74,6 +87,8 @@ public class SuntikManager : MonoBehaviour
 
         if (Distance < 50f)
         {
+            Debug.Log("kena ikan betina 1");
+
             suntikBetina1.transform.position = suntikBetina1Black.transform.position;
             SoundManager.Instance.PlaySFX("SFX Inject");
 
@@ -81,6 +96,14 @@ public class SuntikManager : MonoBehaviour
             suntikGaming.SetActive(false);
             suntikArea2.SetActive(false);
             suntikan2.SetActive(false);
+
+            ikanJantan.SetActive(true);
+            ikanBerita1.SetActive(true);
+            ikanBetina2.SetActive(true);
+
+            areaSuntik1.anchoredPosition = new Vector2(17.865f, 156.94f);
+            areaSuntik2.anchoredPosition = new Vector2(17.865f, 156.94f);
+            areaSuntik3.anchoredPosition = new Vector2(17.865f, 156.94f);
 
             fst2.isTimeRunning = true;
         }
@@ -97,6 +120,8 @@ public class SuntikManager : MonoBehaviour
 
         if (Distance < 50f)
         {
+            Debug.Log("kena ikan betina 2");
+
             suntikBetina2.transform.position = suntikBetina2Black.transform.position;
             SoundManager.Instance.PlaySFX("SFX Inject");
 
@@ -104,6 +129,14 @@ public class SuntikManager : MonoBehaviour
             suntikGaming.SetActive(false);
             suntikArea3.SetActive(false);
             suntikan3.SetActive(false);
+
+            ikanJantan.SetActive(true);
+            ikanBerita1.SetActive(true);
+            ikanBetina2.SetActive(true);
+
+            areaSuntik1.anchoredPosition = new Vector2(17.865f, 156.94f);
+            areaSuntik2.anchoredPosition = new Vector2(17.865f, 156.94f);
+            areaSuntik3.anchoredPosition = new Vector2(17.865f, 156.94f);
 
             fst3.isTimeRunning = true;
         }

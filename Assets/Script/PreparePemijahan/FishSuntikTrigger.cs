@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class FishSuntikTrigger : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI tersuntikText;
-    [SerializeField] private GameObject tanganPegangIkan, suntikGaming, suntikArea;
+    [SerializeField] private GameObject tanganPegangIkan, suntikGaming;
+    [SerializeField] private RectTransform suntikArea, suntikNonArea1, suntikNonArea2;
+    [SerializeField] private GameObject ikanBerita1, ikanBetina2, ikanJantan;
     //[SerializeField] private GameObject suntikan;
     private Button suntikJantanBtn, suntikBetinaBtn;
 
@@ -28,7 +30,7 @@ public class FishSuntikTrigger : MonoBehaviour
 
         tanganPegangIkan.SetActive(false);
         suntikGaming.SetActive(false);
-        suntikArea.SetActive(false);
+        suntikArea.gameObject.SetActive(false);
 
         //suntikan.SetActive(false);
     }
@@ -56,9 +58,16 @@ public class FishSuntikTrigger : MonoBehaviour
         Debug.Log("Dalam Proses Suntik");
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
+        ikanJantan.SetActive(false);
+        ikanBerita1.SetActive(false);
+        ikanBetina2.SetActive(false);
+
         tanganPegangIkan.SetActive(true);
         suntikGaming.SetActive(true);
-        suntikArea.SetActive(true);
+        suntikArea.gameObject.SetActive(true);
+
+        suntikNonArea1.anchoredPosition = new Vector2(suntikNonArea1.anchoredPosition.x + 2000, suntikNonArea1.anchoredPosition.y + 2000);
+        suntikNonArea2.anchoredPosition = new Vector2(suntikNonArea2.anchoredPosition.x + 2000, suntikNonArea2.anchoredPosition.y + 2000);
 
         //isTimeRunning = true;
         //isTerpijah = true;
