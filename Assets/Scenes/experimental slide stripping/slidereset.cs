@@ -40,6 +40,5 @@ public class slidereset : MonoBehaviour
         var mouseScreenPos = Input.mousePosition;
         mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
-
     }
 }
