@@ -1,0 +1,51 @@
+# Blender MTL File: '3D Laptop Silver colour  16 inch.blend'
+# Material Count: 5
+
+newmtl Cover_Silver
+Ns 302.760014
+Ka 1.000000 1.000000 1.000000
+Kd 0.590619 0.590619 0.590619
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl Display_Glass
+Ns 900.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.010022 0.010022 0.010022
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Keyboard_Black_Plastic
+Ns 81.000006
+Ka 1.000000 1.000000 1.000000
+Kd 0.004896 0.004896 0.004896
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 0.700000 -s 20.399998 -4.200000 1.000000 C:\\Users\\Cyril Karunarathna\\Desktop\\Downloads\\Blender Textures\\Plastic004_1K_Normal.jpg
+
+newmtl None
+Ns 500
+Ka 0.8 0.8 0.8
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+
+newmtl TouchPad_Silver
+Ns 302.760014
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3

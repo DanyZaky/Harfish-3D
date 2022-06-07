@@ -1,107 +1,19 @@
 fileFormatVersion: 2
-guid: 2f2c028067b3e014490253e2cbadd32e
+guid: f8b9434296d49ad45b5fe703a905e66f
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
+  internalIDToNameTable: []
+  externalObjects:
   - first:
-      1: 100000
-    second: Armature
-  - first:
-      1: 100002
-    second: Bone
-  - first:
-      1: 100004
-    second: Bone_001
-  - first:
-      1: 100006
-    second: Bone_002
-  - first:
-      1: 100008
-    second: Bone_003
-  - first:
-      1: 100010
-    second: Bone_004
-  - first:
-      1: 100012
-    second: Bone_005
-  - first:
-      1: 100014
-    second: Bone_006
-  - first:
-      1: 100016
-    second: Bone_007
-  - first:
-      1: 100018
-    second: Bone_008
-  - first:
-      1: 100020
-    second: //RootNode
-  - first:
-      1: 100022
-    second: Plane
-  - first:
-      4: 400000
-    second: Armature
-  - first:
-      4: 400002
-    second: Bone
-  - first:
-      4: 400004
-    second: Bone_001
-  - first:
-      4: 400006
-    second: Bone_002
-  - first:
-      4: 400008
-    second: Bone_003
-  - first:
-      4: 400010
-    second: Bone_004
-  - first:
-      4: 400012
-    second: Bone_005
-  - first:
-      4: 400014
-    second: Bone_006
-  - first:
-      4: 400016
-    second: Bone_007
-  - first:
-      4: 400018
-    second: Bone_008
-  - first:
-      4: 400020
-    second: //RootNode
-  - first:
-      4: 400022
-    second: Plane
-  - first:
-      43: 4300000
-    second: Plane
-  - first:
-      74: 7400000
-    second: Default Take
-  - first:
-      74: 7400002
-    second: FastSwim
-  - first:
-      74: 7400004
-    second: Swim
-  - first:
-      95: 9500000
-    second: //RootNode
-  - first:
-      137: 13700000
-    second: Plane
-  - first:
-      74: -623603649343465320
-    second: Scene
-  externalObjects: {}
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: defaultMat
+    second: {fileID: 2100000, guid: e196098097360914b8c7d67fc38d9097, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -124,7 +36,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -132,11 +44,11 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
-    fileIdsGeneration: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -148,11 +60,11 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     meshOptimizationFlags: -1
-    indexFormat: 1
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 0
+    secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
@@ -161,8 +73,8 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 0
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
@@ -182,13 +94,13 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
