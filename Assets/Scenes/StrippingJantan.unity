@@ -4268,8 +4268,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144387714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.88, y: -0.27, z: -8}
-  m_LocalScale: {x: 4.719473, y: 3.9958398, z: 1}
+  m_LocalPosition: {x: -4.7073, y: -0.4406, z: -8}
+  m_LocalScale: {x: 9.933952, y: 7.9431453, z: 1}
   m_Children: []
   m_Father: {fileID: 1432109407}
   m_RootOrder: 1
@@ -4898,7 +4898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationTag: DropArea
-  startPosition: {x: 1.2, y: -0.38, z: -8}
+  startPosition: {x: 0.93, y: -0.45, z: -8}
   maxJumlahTelur: 50
   progressBar: {fileID: 1666169358}
   jumalhTelurText: {fileID: 1604991305}
@@ -4970,8 +4970,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357423490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2, y: -0.38, z: -8}
-  m_LocalScale: {x: 2.2335, y: 1.854, z: 1}
+  m_LocalPosition: {x: 0.93, y: -0.45, z: -8}
+  m_LocalScale: {x: 3.7212343, y: 2.8953917, z: 1}
   m_Children:
   - {fileID: 1013975588}
   - {fileID: 1062935235}
