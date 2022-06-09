@@ -7,6 +7,10 @@ TagManager:
   - sperm
   - egg
   - Telur
+  - Medicine
+  - Feed
+  - Jamur
+  - Ikan
   layers:
   - Default
   - TransparentFX

@@ -7,7 +7,6 @@ public class Patrolling : MonoBehaviour
     public float speed;
     private float waitTime;
     public float startWaitTime;
-
     [SerializeField] private Transform[] moveSpots;
     [SerializeField] private GameObject ikanMas;
     private int randomSpot;
