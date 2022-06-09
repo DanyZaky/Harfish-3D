@@ -94,7 +94,7 @@ public class StripTrigger : MonoBehaviour
                     jumlahTelur += (Random.Range(0.5f, 2.3f) + selCount);
                     jumalhTelurText.SetText(jumlahTelur.ToString("0"));
                     progressBar.fillAmount = jumlahTelur / maxJumlahTelur;
-                    StartCoroutine(strippingAnimation(handAnim, "stripping", "idle", new Vector3(-1.67f, -1.64f, -7.54f), 0.5f, 2.0f));
+                    StartCoroutine(strippingAnimation(handAnim, "stripdenisoni", "idle denisoni", new Vector3(0.28f, 0.76f, -7.54f), 0.25f, 2.0f));
                     gameObject.GetComponent<MeshCollider>().enabled = false;
 
                     if (isTutorial == true)
@@ -144,7 +144,7 @@ public class StripTrigger : MonoBehaviour
 
     private IEnumerator marahAnimation()
     {
-        handAnim.Play("stripping");
+        handAnim.Play("stripdenisoni");
         
         gameObject.GetComponent<MeshCollider>().enabled = false;
         delayStripping.GetComponent<MeshCollider>().enabled = true;
@@ -152,11 +152,11 @@ public class StripTrigger : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
 
         SoundManager.Instance.PlaySFX("SFX Angry");
-        fishAnim.Play("angryFish");
+        handAnim.Play("marah denisoni");
 
         yield return new WaitForSeconds(1.7f);
 
-        handAnim.Play("idle");
+        handAnim.Play("idle denisoni");
         fishAnim.Play("idlefish");
         pb.isPowerRunning = true;
         gameObject.GetComponent<MeshCollider>().enabled = true;
