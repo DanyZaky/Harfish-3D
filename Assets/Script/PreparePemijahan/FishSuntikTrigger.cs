@@ -9,7 +9,10 @@ public class FishSuntikTrigger : MonoBehaviour
     [SerializeField] private TextMeshProUGUI tersuntikText;
     [SerializeField] private GameObject tanganPegangIkan, suntikGaming;
     [SerializeField] private RectTransform suntikArea, suntikNonArea1, suntikNonArea2;
-    [SerializeField] private GameObject ikanBerita1, ikanBetina2, ikanJantan;
+    [SerializeField] private GameObject ikan;
+    [SerializeField] private SuntikManager sm;
+
+    private string nameObj;
     //[SerializeField] private GameObject suntikan;
     private Button suntikJantanBtn, suntikBetinaBtn;
 
@@ -45,11 +48,25 @@ public class FishSuntikTrigger : MonoBehaviour
             if(currentDelayPijah <= 0f)
             {
                 tersuntikText.SetText("Siap Dipijah!");
-                isTimeRunning = false;
-                currentDelayPijah = delayPijah;
+                //isTimeRunning = false;
+                //currentDelayPijah = delayPijah;
 
                 isSiapPijah = true;
+
+                if(isSiapPijah == true)
+                {
+                    sm.ikanTerpijah += 1;
+                    isSiapPijah = false;
+                    currentDelayPijah = delayPijah;
+                    isTimeRunning = false;
+                    nameObj = null;
+                }
             }
+        }
+
+        if(sm.isTerpijah == true && nameObj == gameObject.name)
+        {
+            isTimeRunning = true;
         }
     }
 
@@ -58,9 +75,9 @@ public class FishSuntikTrigger : MonoBehaviour
         Debug.Log("Dalam Proses Suntik");
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
-        ikanJantan.SetActive(false);
-        ikanBerita1.SetActive(false);
-        ikanBetina2.SetActive(false);
+        ikan.SetActive(false);
+
+        nameObj = gameObject.name;
 
         tanganPegangIkan.SetActive(true);
         suntikGaming.SetActive(true);

@@ -45,8 +45,8 @@ public class StripTrigger : MonoBehaviour
         winPanel.SetActive(false);
         losePanel.SetActive(false);
 
-        isGameOver = true;
-        gameObject.GetComponent<MeshCollider>().enabled = false;
+        //isGameOver = true;
+        //gameObject.GetComponent<MeshCollider>().enabled = false;
 
         isTutorial = true;
         isWin = true;
@@ -128,6 +128,7 @@ public class StripTrigger : MonoBehaviour
         gameobj.Play(anim1);
         gameObject.GetComponent<MeshCollider>().enabled = false;
         delayStripping.GetComponent<MeshCollider>().enabled = true;
+        gameObject.transform.position = new Vector3(99f, 99f, 99f);
 
         yield return new WaitForSeconds(dur1);
 
@@ -139,6 +140,7 @@ public class StripTrigger : MonoBehaviour
         gameobj.Play(anim2);
         pb.isPowerRunning = true;
         gameObject.GetComponent<MeshCollider>().enabled = true;
+        gameObject.transform.position = startPosition;
         delayStripping.GetComponent<MeshCollider>().enabled = false;
     }
 
@@ -148,6 +150,7 @@ public class StripTrigger : MonoBehaviour
         
         gameObject.GetComponent<MeshCollider>().enabled = false;
         delayStripping.GetComponent<MeshCollider>().enabled = true;
+        gameObject.transform.position = new Vector3(99f, 99f, 99f);
 
         yield return new WaitForSeconds(0.7f);
 
@@ -160,6 +163,7 @@ public class StripTrigger : MonoBehaviour
         fishAnim.Play("idlefish");
         pb.isPowerRunning = true;
         gameObject.GetComponent<MeshCollider>().enabled = true;
+        gameObject.transform.position = startPosition;
         delayStripping.GetComponent<MeshCollider>().enabled = false;
     }
 
@@ -219,8 +223,8 @@ public class StripTrigger : MonoBehaviour
     {
         SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(FadeOut(panelTutorial2, 0.4f));
-        gameObject.GetComponent<MeshCollider>().enabled = true;
-        isGameOver = false;
+        //gameObject.GetComponent<MeshCollider>().enabled = true;
+        //isGameOver = false;
     }
 
     public void buttonTutorial3()
@@ -233,7 +237,7 @@ public class StripTrigger : MonoBehaviour
     {
         SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(FadeOut(panelTutorial4, 0.4f));
-        gameObject.GetComponent<MeshCollider>().enabled = true;
+        //gameObject.GetComponent<MeshCollider>().enabled = true;
     }
 
     public IEnumerator FadeIn(CanvasGroup container, float duration)
