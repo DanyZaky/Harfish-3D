@@ -100,9 +100,9 @@ public class SuntikManager : MonoBehaviour
 
             ikan.SetActive(true);
 
-            areaSuntik1.anchoredPosition = new Vector2(17.865f, 156.94f);
-            areaSuntik2.anchoredPosition = new Vector2(17.865f, 156.94f);
-            areaSuntik3.anchoredPosition = new Vector2(17.865f, 156.94f);
+            areaSuntik1.anchoredPosition = new Vector2(17.865f, -15.06f);
+            areaSuntik2.anchoredPosition = new Vector2(17.865f, -15.06f);
+            areaSuntik3.anchoredPosition = new Vector2(17.865f, -15.06f);
 
             isTerpijah = true;
 
