@@ -12,8 +12,6 @@ public class ChatSpawner : MonoBehaviour
     public float timeChatSpawn;
     private float timeChatSpawnCounter;
 
-    private int angka = 1;
-
     public int max = 10;
     int jumlah;
 
