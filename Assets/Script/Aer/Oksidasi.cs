@@ -13,6 +13,8 @@ public class Oksidasi : MonoBehaviour
     [SerializeField]
     private Toggle mesinGelembung;
     [SerializeField] private Penyakit penyakit;
+    [SerializeField] private AerManager M;
+    [SerializeField] Image bgKipas;
 
     // Start is called before the first frame update
     void Start()
@@ -26,44 +28,49 @@ public class Oksidasi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (waktu>0)
+        if(!M.isPaused)
         {
-            waktu -= Time.deltaTime;
-        }
-        else if(waktu<=0)
-        {
-            pengaruh = Random.Range(-0.01f, 0);
-            waktu = tiapWaktu;
-        }
-            oksidasi += pengaruh;
-        teksOksidasi.text = oksidasi.ToString("#.00 dGH");
-        if(oksidasi >  5 && oksidasi < 25)
-        {
-            teksStatus.text = "(Aman)";
-            penyakit.KehabisanNapas(0);
-        }
-        else if(oksidasi < 5)
-        {
-            teksStatus.text = "(Bahaya) Nyalakan kipas";
-            penyakit.KehabisanNapas(1.00f);
-        }
-        else if(oksidasi > 25)
-        {
-            teksStatus.text = "(Bahaya) Matikan kipas";
-            penyakit.KehabisanNapas(1.00f);
-        }
 
-        if(mesinGelembung.isOn)
-        {
-           MesinGelembung();
+            if (waktu>0)
+            {
+                waktu -= Time.deltaTime;
+            }
+            else if(waktu<=0)
+            {
+                pengaruh = Random.Range(-0.01f, 0);
+                waktu = tiapWaktu;
+            }
+                oksidasi += pengaruh;
+            teksOksidasi.text = "Oksigen " + oksidasi.ToString("#.00 dGH");
+            if(oksidasi >  5 && oksidasi < 25)
+            {
+                teksStatus.text = "(Aman)";
+                penyakit.KehabisanNapas(0);
+            }
+            else if(oksidasi < 5)
+            {
+                teksStatus.text = "(Bahaya) Nyalakan kipas";
+                penyakit.KehabisanNapas(1.00f);
+            }
+            else if(oksidasi > 25)
+            {
+                teksStatus.text = "(Bahaya) Matikan kipas";
+                penyakit.KehabisanNapas(1.00f);
+            }
+
+            if(mesinGelembung.isOn)
+            {
+                MesinGelembung();
+            }
+            else bgKipas.color = Color.red;
+            teksMesin.text = kekuatanMesin.value.ToString("#.0000");
         }
-        teksMesin.text = kekuatanMesin.value.ToString("#.0000");
     }
 
     public void MesinGelembung()
     {
             oksidasi += kekuatanMesin.value;
-        
+            bgKipas.color = Color.green;
             
         
     }

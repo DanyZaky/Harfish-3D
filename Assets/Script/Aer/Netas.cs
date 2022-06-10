@@ -9,11 +9,12 @@ public class Netas : MonoBehaviour
     [SerializeField] private Vector3 lokasi, area;
     [SerializeField] private float untukMenetas;
     [SerializeField] private int jumlah;
+    public bool netas;
    
 
     void Start()
     {
-        
+        netas = false;
         //jumlah = (int)(PlayerPrefs.GetFloat("MixingCount"));
         for(int i = 0; i<jumlah; i++)
         {
@@ -29,7 +30,7 @@ public class Netas : MonoBehaviour
         }
         else if( untukMenetas < 0 && jumlah > 0)
         {
-           
+           netas = true;
             MunculinIkan();
             jumlah--;
         }

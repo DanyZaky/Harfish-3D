@@ -6,26 +6,29 @@ public class Penyakit : MonoBehaviour
 {
     private float waktuOksidasi;
     [SerializeField] private float Ketahanan;
+    [SerializeField] private AerManager M;
     private float time = 0;
     public void KehabisanNapas(float status)
     {
         waktuOksidasi = status;
     }
 
-
     void Update()
     {
-        if(waktuOksidasi > 0)
+        if(!M.isPaused)
         {
-            time += Time.deltaTime * (waktuOksidasi+1);
-            //Debug.Log(time);
-            if(time >= Ketahanan)
+            if(waktuOksidasi > 0)
             {
-                Destroy (GameObject.FindWithTag("Ikan"));
-                time = 0;
-                 //Debug.Log("Terbunuh");
+                time += Time.deltaTime * (waktuOksidasi+1);
+                //Debug.Log(time);
+                if(time >= Ketahanan)
+                {
+                    Destroy (GameObject.FindWithTag("Ikan"));
+                    time = 0;
+                    //Debug.Log("Terbunuh");
+                }
             }
+            else time = 0;
         }
-        else time = 0;
     }
 }

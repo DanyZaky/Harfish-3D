@@ -37,7 +37,7 @@ public class Suhu : MonoBehaviour
             suhuKolam = suhuSekarang;
         }
         teksPengaturSuhu.text = pengaturSuhu.value.ToString() + "°C";
-        teksSuhuKolam.text = suhuKolam.ToString() + "°C";
+        teksSuhuKolam.text = "Suhu " + suhuKolam.ToString() + "°C";
     }
 
     public void PengaturSuhu()
