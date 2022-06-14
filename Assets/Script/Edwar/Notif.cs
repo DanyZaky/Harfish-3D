@@ -34,7 +34,7 @@ public class Notif : MonoBehaviour
     public void buttonOpenPesanMasuk()
     {
 
-        PanelManager.menu2();
+        PanelManager.menu5();
     }
 
 }
