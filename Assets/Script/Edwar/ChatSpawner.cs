@@ -82,11 +82,11 @@ public class ChatSpawner : MonoBehaviour
         GameObject newIkan = Instantiate(PrefabPesanMasuk, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity) as GameObject;
         newIkan.transform.SetParent(PanelPesanMasuk.transform, false);
 
-        GameObject aa = newIkan.transform.GetChild(0).GetChild(0).gameObject;
-        aa.transform.GetComponent<TMPro.TextMeshProUGUI>().text = "Nama : " + nama[nama_random];
-        GameObject bb = newIkan.transform.GetChild(0).GetChild(1).gameObject;
-        bb.transform.GetComponent<TMPro.TextMeshProUGUI>().text = "Pesanan : " + jumlah + " ekor " + nama_ikan[nama_ikan_random];
-        GameObject cc = newIkan.transform.GetChild(0).GetChild(2).gameObject;
-        cc.transform.GetComponent<TMPro.TextMeshProUGUI>().text = "Harga : 200/ekor";
+        GameObject aa = newIkan.transform.GetChild(1).GetChild(0).gameObject;
+        aa.transform.GetComponent<TMPro.TextMeshProUGUI>().text = nama[nama_random];
+        //GameObject bb = newIkan.transform.GetChild(1).GetChild(1).gameObject;
+        //bb.transform.GetComponent<TMPro.TextMeshProUGUI>().text = "Pesanan : " + jumlah + " ekor " + nama_ikan[nama_ikan_random];
+        //GameObject cc = newIkan.transform.GetChild(0).GetChild(2).gameObject;
+        //cc.transform.GetComponent<TMPro.TextMeshProUGUI>().text = "Harga : 200/ekor";
     }
 }

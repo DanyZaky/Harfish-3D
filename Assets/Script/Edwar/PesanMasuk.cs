@@ -5,29 +5,30 @@ using UnityEngine.UI;
 
 public class PesanMasuk : MonoBehaviour
 {
+    [SerializeField] private GameObject Message;
     private float time = 59f;
     private float timeCounter;
     private void Start()
     {
         timeCounter = time;
-        GameObject btnClose = transform.GetChild(2).gameObject;
-        btnClose.transform.GetComponent<Button>().onClick.AddListener(() => buttonCloseNotif());
+        transform.GetComponent<Button>().onClick.AddListener(() => openMessage());
+
     }
     private void Update()
     {
         timeCounter -= 1f * Time.deltaTime;
 
 
-        GameObject aa = transform.GetChild(1).gameObject;
+        GameObject aa = transform.GetChild(1).GetChild(1).gameObject;
         aa.transform.GetComponent<TMPro.TextMeshProUGUI>().text = Mathf.Round(timeCounter).ToString();
         if (timeCounter <= 1)
         {
-            buttonCloseNotif();
+            //buttonCloseNotif();
         }
     }
-    public void buttonCloseNotif()
+    public void openMessage()
     {
-        transform.gameObject.SetActive(false);
+        Message.gameObject.SetActive(true);
     }
 
 }
