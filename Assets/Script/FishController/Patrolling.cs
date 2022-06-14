@@ -55,7 +55,7 @@ public class Patrolling : MonoBehaviour
 
                 if (isRotate == true)
                 {
-                    rotationValue -= 10;
+                    rotationValue -= 5;
                     ikanMas.transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
                     
                     if(rotationValue <= 0)
@@ -72,7 +72,7 @@ public class Patrolling : MonoBehaviour
 
                 if (isRotate == true)
                 {
-                    rotationValue += 10;
+                    rotationValue += 5;
                     ikanMas.transform.localRotation = Quaternion.Euler(0, rotationValue, 0);
 
                     if (rotationValue >= 180)
