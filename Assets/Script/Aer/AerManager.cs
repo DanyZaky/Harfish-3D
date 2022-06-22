@@ -5,7 +5,7 @@ using TMPro;
 
 public class AerManager : MonoBehaviour
 {
-    private int jumlahBenih;
+    [SerializeField] private int jumlahBenih;
     [SerializeField] private TextMeshProUGUI waktuText,benihText,HasilText, pauseText;
     [SerializeField] float waktuGame;
     [SerializeField] private GameObject EndUI, pauseUI;
