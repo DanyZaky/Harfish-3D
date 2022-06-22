@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class Ikan : MonoBehaviour
 {
-    [SerializeField] int variousMove;
+    [SerializeField] int variousMove, waktuMatiKenaJamur;
     private Vector3[] moveSpots;
     [SerializeField] private Vector3 area;
     [SerializeField] private float speed, pertumbuhan, waktuTumbuh;
+    public bool jamuran;
 
     private int randomSpot;
-    private float waitTime,startWaitTime,rotationValue;
+    private float waitTime,startWaitTime,rotationValue, waktuMati;
     private bool isRotate,sudahTumbuh;
     
     void Start()
     {
+        jamuran = false;
+        waktuMati = waktuMatiKenaJamur;
         sudahTumbuh = false;
         moveSpots = new Vector3[variousMove];
         for(int i = 0; i < variousMove; i++)
@@ -37,6 +40,18 @@ public class Ikan : MonoBehaviour
         {
             Tumbuh();
             
+        }
+        if(jamuran == true)
+        {
+            waktuMati -= Time.deltaTime;
+            //transform.GetChild(1).gameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", Color.green);
+            if(waktuMati <= 0) Destroy(gameObject);
+            if(transform.GetChild(2).gameObject.activeSelf == false) jamuran = false;
+        }
+        else 
+        {
+            waktuMati = waktuMatiKenaJamur;
+            transform.GetChild(1).gameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", Color.white);
         }
     }
 
@@ -92,13 +107,13 @@ public class Ikan : MonoBehaviour
             }
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Jamur")
-        {
-            Destroy(gameObject);
-        }
-    }
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.gameObject.tag == "Jamur")
+    //     {
+    //         Destroy(gameObject);
+    //     }
+    // }
 
     private void Tumbuh()
     {
