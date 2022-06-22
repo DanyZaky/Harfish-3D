@@ -1296,6 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f460be9111e83d48afa96bfe98dc1c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumlahBenih: 0
   waktuText: {fileID: 2107899249}
   benihText: {fileID: 1816072757}
   HasilText: {fileID: 941306206}
@@ -1881,11 +1882,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a49c3f83e8c2a459b9bb23de413af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ikans: []
   jamoer: {fileID: 4701802940305292385, guid: 2178008d5ac42c94cafeac2456b2d5a9, type: 3}
   lokasi: {x: 0.84, y: 0.4, z: 0}
-  area: {x: -0.47, y: 0.32, z: 1.72}
-  tiapDetik: 5
-  jumlahMaksimal: 5
+  area: {x: 0.47, y: 0.32, z: 1.72}
+  tiapDetik: 2.5
   penyakit: {fileID: 1870992308}
 --- !u!4 &591930180
 Transform:
@@ -2162,7 +2163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6ee375c01c3754092bcd25096894ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxNumParticles: 895488
+  MaxNumParticles: 504320
   bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
@@ -2184,7 +2185,7 @@ MonoBehaviour:
   solverParameters: {fileID: 610050485}
   materialParameters: {fileID: 610050486}
   renderingParameters: {fileID: 610050484}
-  containerSize: {x: 2.8919263, y: 1.618386, z: 3.0510066}
+  containerSize: {x: 2.8919263, y: 3.618704, z: 3.0510066}
   containerPos: {x: 0, y: 0, z: 0}
   fluidInitialVelocity: {x: 0, y: 0, z: 0}
   manipulatorManager: {fileID: 610050483}
@@ -2204,7 +2205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610050482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.966, z: 0}
+  m_LocalPosition: {x: 0, y: 1.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1713894013}
@@ -2450,9 +2451,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   telor: {fileID: 785786803224185136, guid: 7d56e43bb3eb62447973cd2aea5ee326, type: 3}
-  ikan: {fileID: 272410660355729595, guid: 8e9b826c10941b744be127f44df9bbe1, type: 3}
+  ikan: {fileID: 6569504251085494, guid: 8200c4d10cf5d124cbcae5c42b81f0ca, type: 3}
   lokasi: {x: 0.84, y: 0.4, z: 0}
-  area: {x: -0.47, y: 0.17, z: 1.72}
+  area: {x: 0.47, y: 0.17, z: 1.72}
   untukMenetas: 7
   jumlah: 10
   netas: 0
@@ -4414,7 +4415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720627499}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.35, y: 0.39, z: 0}
+  m_LocalPosition: {x: -1.35, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

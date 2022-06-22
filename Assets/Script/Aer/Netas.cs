@@ -15,7 +15,7 @@ public class Netas : MonoBehaviour
     void Start()
     {
         netas = false;
-        jumlah = (int)(PlayerPrefs.GetFloat("MixingCount"));
+        //jumlah = (int)(PlayerPrefs.GetFloat("MixingCount"));
         for(int i = 0; i<jumlah; i++)
         {
             MunculinTelor();

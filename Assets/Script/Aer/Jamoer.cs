@@ -14,7 +14,8 @@ public class Jamoer : MonoBehaviour
         if(oj.Obat() == true)
         {
             oj.Terbunuh(false);
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
