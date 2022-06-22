@@ -37988,6 +37988,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -33.055
       objectReference: {fileID: 0}
+    - target: {fileID: 6508577164721545307, guid: 7f97fe7b8bc079542a2cbaf5410a1ab9, type: 3}
+      propertyPath: m_text
+      value: Bu Ghina
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f97fe7b8bc079542a2cbaf5410a1ab9, type: 3}
 --- !u!1001 &4553061810779511346
