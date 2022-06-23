@@ -12,6 +12,8 @@ public class FishSuntikTrigger : MonoBehaviour
     [SerializeField] private GameObject ikan;
     [SerializeField] private SuntikManager sm;
 
+    [SerializeField] private GameObject tutor1DisplayObj;
+
     private string nameObj;
     //[SerializeField] private GameObject suntikan;
     private Button suntikJantanBtn, suntikBetinaBtn;
@@ -74,6 +76,8 @@ public class FishSuntikTrigger : MonoBehaviour
     {
         Debug.Log("Dalam Proses Suntik");
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+        tutor1DisplayObj.SetActive(false);
 
         ikan.SetActive(false);
 
