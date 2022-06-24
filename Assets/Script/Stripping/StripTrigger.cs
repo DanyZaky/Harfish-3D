@@ -19,14 +19,15 @@ public class StripTrigger : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI jumalhTelurText, countdownText, currentScore;
     [SerializeField] private GameObject delayStripping, prefabsSelTelur, winPanel, losePanel, filledBowl;
+    [SerializeField] private DialogueStripping ds;
 
     [SerializeField] private float countDown;
     [SerializeField] private Animator handAnim, fishAnim;
     private float countDownCounter;
     private bool isGameOver;
 
-    [SerializeField] private CanvasGroup panelTutorial1, panelTutorial2, panelTutorial3, panelTutorial4;
-    public bool isTutorial;
+    //[SerializeField] private CanvasGroup panelTutorial1, panelTutorial2, panelTutorial3, panelTutorial4;
+    //public bool isTutorial;
     [SerializeField]private bool isWin;
 
     [SerializeField] private float moveFilledBowl;
@@ -45,10 +46,10 @@ public class StripTrigger : MonoBehaviour
         winPanel.SetActive(false);
         losePanel.SetActive(false);
 
-        //isGameOver = true;
+        isGameOver = true;
         //gameObject.GetComponent<MeshCollider>().enabled = false;
 
-        isTutorial = true;
+        //isTutorial = true;
         isWin = true;
     }
 
@@ -57,6 +58,11 @@ public class StripTrigger : MonoBehaviour
         WinLoseCondition();
 
         CountDown();
+
+        if (ds.startTutorial == true)
+        {
+            isGameOver = false;
+        }
     }
 
     
@@ -96,13 +102,15 @@ public class StripTrigger : MonoBehaviour
                     progressBar.fillAmount = jumlahTelur / maxJumlahTelur;
                     StartCoroutine(strippingAnimation(handAnim, "stripdenisoni", "idle denisoni", new Vector3(0.28f, 0.76f, -7.54f), 0.25f, 2.0f));
                     gameObject.GetComponent<MeshCollider>().enabled = false;
-
+                    /*
                     if (isTutorial == true)
                     {
                         gameObject.GetComponent<MeshCollider>().enabled = false;
                         isTutorial = false;
                         StartCoroutine(FadeIn(panelTutorial3, 0.4f));
-                    }
+                    }*/
+
+                    ds.startTutorial = false;
                 }
 
                 if (pb.powerCountCounter > 130f || pb.powerCountCounter < -130f)
@@ -212,7 +220,7 @@ public class StripTrigger : MonoBehaviour
             currentScore.SetText(PlayerPrefs.GetFloat(nameValue).ToString("0"));
         }
     }
-
+    /*
     public void buttonTutorial1()
     {
         SoundManager.Instance.PlaySFX("SFX Button");
@@ -238,7 +246,7 @@ public class StripTrigger : MonoBehaviour
         SoundManager.Instance.PlaySFX("SFX Button");
         StartCoroutine(FadeOut(panelTutorial4, 0.4f));
         //gameObject.GetComponent<MeshCollider>().enabled = true;
-    }
+    }*/
 
     public IEnumerator FadeIn(CanvasGroup container, float duration)
     {
