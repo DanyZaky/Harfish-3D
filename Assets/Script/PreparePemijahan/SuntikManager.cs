@@ -7,6 +7,9 @@ public class SuntikManager : MonoBehaviour
     [SerializeField] private GameObject tanganPegangIkan, tanganPegangIkanBetina, suntikGaming, suntikArea1, suntikArea2, suntikArea3, suntikan1, suntikan2, suntikan3, buttonPijah;
     [SerializeField] private GameObject ikan;
     [SerializeField] private RectTransform areaSuntik1, areaSuntik2, areaSuntik3;
+    [SerializeField] private GameObject fingerSuntik;
+
+    private bool isTersuntik;
 
     public bool isTerpijah;
     public float totalTerpijah, ikanTerpijah;
@@ -22,6 +25,8 @@ public class SuntikManager : MonoBehaviour
         isTerpijah = false;
 
         totalTerpijah = ikan.transform.childCount;
+
+        isTersuntik = false;
     }
 
     private void Update()
@@ -29,6 +34,11 @@ public class SuntikManager : MonoBehaviour
         if (ikanTerpijah >= totalTerpijah)
         {
             buttonPijah.SetActive(true);
+        }
+
+        if (isTersuntik == true)
+        {
+            fingerSuntik.SetActive(false);
         }
     }
     /*
@@ -88,6 +98,7 @@ public class SuntikManager : MonoBehaviour
         if (Distance < 50f)
         {
             Debug.Log("kena ikan betina 1");
+            isTersuntik = true;
 
             suntikBetina1.transform.position = suntikBetina1Pos;
             suntikBetina1.transform.rotation = Quaternion.Euler(0f, 0f, 45f);
