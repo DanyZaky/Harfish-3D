@@ -18,6 +18,8 @@ public class SpeedMixing : MonoBehaviour
     [SerializeField] private float cd;
 
     [SerializeField] private CanvasGroup tutorPanel1, tutorPanel2, tutorPanel3;
+
+    [SerializeField] private DialogueStripping ds;
     private float currentCD;
     private bool isGameOver;
 
@@ -61,6 +63,11 @@ public class SpeedMixing : MonoBehaviour
 
         ProgressTelurTeraduk();
         Countdown();
+
+        if(ds.startTutorial == true)
+        {
+            isGameOver = false;
+        }
     }
 
     public float GetMoveSpeed()
