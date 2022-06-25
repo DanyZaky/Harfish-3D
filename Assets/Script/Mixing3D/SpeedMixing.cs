@@ -23,7 +23,7 @@ public class SpeedMixing : MonoBehaviour
     private float currentCD;
     private bool isGameOver;
 
-    private float telurTeradukCount;
+    [HideInInspector] public float telurTeradukCount;
 
     private bool isWin, isMixing;
 

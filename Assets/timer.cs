@@ -30,10 +30,10 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (ikan == true)
+        /*if (ikan == true)
         {
             timerActive = true;
-        }
+        }*/
 
         if (timerActive == true)
         {

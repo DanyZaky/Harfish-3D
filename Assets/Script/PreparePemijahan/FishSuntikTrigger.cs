@@ -50,6 +50,7 @@ public class FishSuntikTrigger : MonoBehaviour
             if(currentDelayPijah <= 0f)
             {
                 tersuntikText.SetText("Siap Dipijah!");
+                tersuntikText.color = new Color(124, 100, 100, 100);
                 //isTimeRunning = false;
                 //currentDelayPijah = delayPijah;
 

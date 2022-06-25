@@ -538,15 +538,15 @@ MonoBehaviour:
   m_text: Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum
     ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 82f60454e3f773f4cb6e6efec42b0177, type: 2}
+  m_sharedMaterial: {fileID: 7040782005808225442, guid: 82f60454e3f773f4cb6e6efec42b0177, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4279933130
+  m_fontColor: {r: 0.7921569, g: 0.59607846, b: 0.101960786, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -672,15 +672,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: SEL TELUR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 52deee9f77593e844882b60e4d50cc07, type: 2}
-  m_sharedMaterial: {fileID: 7040782005808225442, guid: 52deee9f77593e844882b60e4d50cc07, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 82f60454e3f773f4cb6e6efec42b0177, type: 2}
+  m_sharedMaterial: {fileID: 7040782005808225442, guid: 82f60454e3f773f4cb6e6efec42b0177, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279933130
+  m_fontColor: {r: 0.7921569, g: 0.59607846, b: 0.101960786, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1730,10 +1730,10 @@ RectTransform:
   m_Father: {fileID: 712853306}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -640, y: -359.74524}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 1280, y: 754.25476}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247300826
 MonoBehaviour:
@@ -3111,14 +3111,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7843200733724475214, guid: ce957e0d7fedd0e4f9071a6d1e949498, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5055,7 +5055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &845512910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9840,7 +9840,7 @@ MonoBehaviour:
   losePanel: {fileID: 715560275}
   filledBowl: {fileID: 811057316}
   ds: {fileID: 432122818}
-  countDown: 25
+  countDown: 35
   handAnim: {fileID: 319569281}
   fishAnim: {fileID: 1583235779}
   isWin: 0
@@ -12030,15 +12030,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 52deee9f77593e844882b60e4d50cc07, type: 2}
-  m_sharedMaterial: {fileID: 7040782005808225442, guid: 52deee9f77593e844882b60e4d50cc07, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 82f60454e3f773f4cb6e6efec42b0177, type: 2}
+  m_sharedMaterial: {fileID: 7040782005808225442, guid: 82f60454e3f773f4cb6e6efec42b0177, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278634496
+  m_fontColor: {r: 0, g: 0.7830189, b: 0.02212456, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -12780,7 +12780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1704388101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15685,7 +15685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3871092489794427668, guid: e96e11a97789a5340b996fba59090053, type: 3}
+  m_Sprite: {fileID: -55007152436394634, guid: ce957e0d7fedd0e4f9071a6d1e949498, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
