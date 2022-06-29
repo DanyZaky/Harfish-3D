@@ -29,8 +29,6 @@ public class CountInBowl : MonoBehaviour
                 isAbis = true;
             }
         }
-        
-        
 
         Debug.Log(jmlInBowl);
     }

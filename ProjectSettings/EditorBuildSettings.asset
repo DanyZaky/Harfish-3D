@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Denisoni/Menu/Menu.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Menu/Menu.unity
     guid: ff07c60f289c9724da810c833fee98b5
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Denisoni/Gameplay/1. Suntik.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/1. Suntik.unity
     guid: e32bb0c37d7e9e346ae9fde8c7946cda
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Denisoni/Gameplay/2. StrippingBetina.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/2. StrippingBetina.unity
     guid: 12d90160866c0eb469435db498de95da
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Denisoni/Gameplay/3. StrippingJantan.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/3. StrippingJantan.unity
     guid: 2847b584ab58d4d42bacc30bcb2d50b6
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Denisoni/Gameplay/4. Mixing.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/4. Mixing.unity
     guid: 31cb44e8d5d6ed741b36508dd9c612a5
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Denisoni/Gameplay/5. Dropping.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/5. Dropping.unity
     guid: df918ec13a8f52b42a65ee5099bc7f8a
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Denisoni/Menu/GetLeaderboard.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Menu/GetLeaderboard.unity
     guid: c3bc0aadbb354c5498d593345c0574c1
   m_configObjects: {}

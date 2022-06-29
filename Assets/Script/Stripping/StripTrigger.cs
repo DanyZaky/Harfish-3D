@@ -34,6 +34,8 @@ public class StripTrigger : MonoBehaviour
     [SerializeField] private float selCount;
     [SerializeField] private string nameValue;
 
+    [SerializeField] private string animStrip, animIdle, animMarah;
+
     void Start()
     {
         pb = GameObject.Find("PowerBar").GetComponent<PowerBar>();
@@ -64,8 +66,6 @@ public class StripTrigger : MonoBehaviour
             isGameOver = false;
         }
     }
-
-    
 
     void OnMouseDown()
     {
@@ -100,7 +100,7 @@ public class StripTrigger : MonoBehaviour
                     jumlahTelur += (Random.Range(0.5f, 2.3f) + selCount);
                     jumalhTelurText.SetText(jumlahTelur.ToString("0"));
                     progressBar.fillAmount = jumlahTelur / maxJumlahTelur;
-                    StartCoroutine(strippingAnimation(handAnim, "stripdenisoni", "idle denisoni", new Vector3(0.28f, 0.76f, -7.54f), 0.25f, 2.0f));
+                    StartCoroutine(strippingAnimation(handAnim, animStrip, animIdle, new Vector3(0.28f, 0.76f, -7.54f), 0.25f, 2.0f));
                     gameObject.GetComponent<MeshCollider>().enabled = false;
                     /*
                     if (isTutorial == true)
@@ -154,7 +154,7 @@ public class StripTrigger : MonoBehaviour
 
     private IEnumerator marahAnimation()
     {
-        handAnim.Play("stripdenisoni");
+        handAnim.Play(animStrip);
         
         gameObject.GetComponent<MeshCollider>().enabled = false;
         delayStripping.GetComponent<MeshCollider>().enabled = true;
@@ -163,11 +163,11 @@ public class StripTrigger : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
 
         SoundManager.Instance.PlaySFX("SFX Angry");
-        handAnim.Play("marah denisoni");
+        handAnim.Play(animMarah);
 
         yield return new WaitForSeconds(1.7f);
 
-        handAnim.Play("idle denisoni");
+        handAnim.Play(animIdle);
         fishAnim.Play("idlefish");
         pb.isPowerRunning = true;
         gameObject.GetComponent<MeshCollider>().enabled = true;

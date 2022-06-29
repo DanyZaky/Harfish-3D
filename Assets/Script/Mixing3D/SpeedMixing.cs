@@ -13,7 +13,8 @@ public class SpeedMixing : MonoBehaviour
     [SerializeField] private TextMeshProUGUI telurTeraduk, countdown, scoreMixing;
     [SerializeField] private Image progressTeraduk;
     [SerializeField] private JumlahTelur jt;
-    [SerializeField] private GameObject winPanel, telurPrefabs, spermaPrefabs;
+    [SerializeField] private GameObject winPanel, telurPrefabs, spermaPrefabs, losePanel;
+    [SerializeField] private CountInBowl cibTelur, cibSperma;
 
     [SerializeField] private float cd;
 
@@ -26,6 +27,7 @@ public class SpeedMixing : MonoBehaviour
     [HideInInspector] public float telurTeradukCount;
 
     private bool isWin, isMixing;
+    public bool isAdaSelSperma;
 
     Vector3 spermPos = new Vector3(0.222f, 1.627f, -8.5852f);
     Vector3 telurPos = new Vector3(-0.1901f, 1.627f, -8.5852f);
@@ -38,9 +40,11 @@ public class SpeedMixing : MonoBehaviour
         isGameOver = true;
 
         winPanel.SetActive(false);
+        losePanel.SetActive(false);
         isWin = true;
 
         isMixing = false;
+        isAdaSelSperma = false;
 
         //Debug.Log("telur = " + PlayerPrefs.GetFloat("TelurCount").ToString("0") + "|| sperma = " + PlayerPrefs.GetFloat("SpermaCount").ToString("0"));
 
@@ -79,25 +83,40 @@ public class SpeedMixing : MonoBehaviour
     {
         progressTeraduk.fillAmount = telurTeradukCount / jt.jmlTelur;
 
-        if (speed >= 1f)
+        if(isAdaSelSperma == true && cibTelur.isAbis == true)
         {
-            telurTeradukCount += Random.Range(19f, 25f) * Time.deltaTime;
-            telurTeraduk.SetText(telurTeradukCount.ToString("0"));
-            //SoundManager.Instance.PlaySFX("SFX Mixing");
-            progressTeraduk.fillAmount = telurTeradukCount / jt.jmlTelur;
+            if (speed >= 1f)
+            {
+                telurTeradukCount += Random.Range(19f, 25f) * Time.deltaTime;
+                telurTeraduk.SetText(telurTeradukCount.ToString("0"));
+                //SoundManager.Instance.PlaySFX("SFX Mixing");
+                progressTeraduk.fillAmount = telurTeradukCount / jt.jmlTelur;
 
-            isMixing = true;
-            Debug.Log("ismixing");
-        }
+                isMixing = true;
+                Debug.Log("ismixing");
+            }
 
-        if (speed < 1f)
-        {
-            isMixing = false;
+            if (speed < 1f)
+            {
+                isMixing = false;
+            }
         }
 
         if (telurTeradukCount >= jt.jmlTelur)
         {
             telurTeradukCount = jt.jmlTelur;
+        }
+        //condition
+        if(telurTeradukCount == jt.jmlTelur && telurTeradukCount > 1)
+        {
+            currentCD = 0f;
+        }
+
+        if(cibTelur.isAbis == true && cibSperma.isAbis == true && jt.jmlTelur <= 0)
+        {
+            losePanel.SetActive(true);
+            winPanel.SetActive(false);
+            isGameOver = false;
         }
     }
 

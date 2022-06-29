@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class JumlahTelur : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI jumlahTelur;
-    
 
+    [SerializeField] private SpeedMixing sm;
     public float jmlTelur;
 
     private void Update()
@@ -22,6 +22,11 @@ public class JumlahTelur : MonoBehaviour
         {
             jmlTelur += (Random.Range(0f, 5f) + 20f);
             SoundManager.Instance.PlaySFX("SFX Dropping");
+        }
+
+        if(col.gameObject.tag == "sperm")
+        {
+            sm.isAdaSelSperma = true;
         }
     }
 
