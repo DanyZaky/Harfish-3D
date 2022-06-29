@@ -15728,6 +15728,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5953221103799355015, guid: 6970312ba563ced4c81600bdd9ec213e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7145252110251349574, guid: 6970312ba563ced4c81600bdd9ec213e, type: 3}
       propertyPath: m_Name
       value: Anim Pijah Besar
