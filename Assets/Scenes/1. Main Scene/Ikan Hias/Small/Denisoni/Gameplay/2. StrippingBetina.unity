@@ -9847,6 +9847,9 @@ MonoBehaviour:
   moveFilledBowl: 0.2
   selCount: 50
   nameValue: TelurCount
+  animStrip: 
+  animIdle: 
+  animMarah: 
 --- !u!64 &1357423492
 MeshCollider:
   m_ObjectHideFlags: 0
