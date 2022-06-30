@@ -6,24 +6,329 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Menu/Menu.unity
+    path: Assets/Scenes/1. Main Scene/Menu/Menu.unity
     guid: ff07c60f289c9724da810c833fee98b5
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/1. Suntik.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/1. Denisoni Suntik.unity
     guid: e32bb0c37d7e9e346ae9fde8c7946cda
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/2. StrippingBetina.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/2. Denisoni StrippingBetina.unity
     guid: 12d90160866c0eb469435db498de95da
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/3. StrippingJantan.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/3. Denisoni StrippingJantan.unity
     guid: 2847b584ab58d4d42bacc30bcb2d50b6
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/4. Mixing.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/4. Denisoni Mixing.unity
     guid: 31cb44e8d5d6ed741b36508dd9c612a5
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Gameplay/5. Dropping.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/5. Denisoni Dropping.unity
     guid: df918ec13a8f52b42a65ee5099bc7f8a
   - enabled: 1
-    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Denisoni/Menu/GetLeaderboard.unity
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Large/Aligator Gar/1. AG Suntik.unity
+    guid: 1811f3794989e9a4fa76c56feaf2fd15
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Large/Aligator Gar/2. AG StrippingBetina.unity
+    guid: 6eb58f69c9756314aaf40f78996d7643
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Large/Aligator Gar/3. AG StrippingJantan.unity
+    guid: 70c6d240e051a5e4cb851986bb279558
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Large/Aligator Gar/4. AG Mixing.unity
+    guid: ad5ec23f39ee0a946a93a6c6ff79ad96
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Large/Aligator Gar/5. AG Dropping.unity
+    guid: c788ea21f0292494d85b77b1bd194cea
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Chocholate Catfish/1. CC Suntik.unity
+    guid: 63181e4b7a6481e479ed86a050185114
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Chocholate Catfish/2. CC StrippingBetina.unity
+    guid: 33a4053eaeeebde4da70b2b2d1b57d50
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Chocholate Catfish/3. CC StrippingJantan.unity
+    guid: d48ca4d784a114a43983b64bfd17ccd2
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Chocholate Catfish/4. CC Mixing.unity
+    guid: 34619db20b9a9324f84ee92d48ff3766
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Chocholate Catfish/5. CC Dropping.unity
+    guid: 68f1b4500af46ab44afd6ae455720ee9
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Koi/1. Koi Suntik.unity
+    guid: efd01c5488af34144b5cd33c956d4b3e
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Koi/2. Koi StrippingBetina.unity
+    guid: 3973ec6b2e872a144ac64d9665398026
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Koi/3. Koi StrippingJantan.unity
+    guid: 902eff34ee9676643922323a6d43cec3
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Koi/4. Koi Mixing.unity
+    guid: 8a23f4a9bdfbd0a41b650a4824775bfc
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Koi/5. Koi Dropping.unity
+    guid: eed105f892aa1ab4a8783ca1fceb5ecd
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Pacu/1. RP Suntik.unity
+    guid: 9d6fd8bf693c7664d886ee10d8b49027
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Pacu/2. RP StrippingBetina.unity
+    guid: 6dbaba72a5cab9b4da2575885c4b7532
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Pacu/3. RP StrippingJantan.unity
+    guid: 4e3e3f43b3c03a44c8b160a6812bc4ea
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Pacu/4. RP Mixing.unity
+    guid: 455689a0553849149b910b8c26ba4dc0
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Pacu/5. RP Dropping.unity
+    guid: 26420aeb9b615004cadb9f378231fbb8
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Tailed Catfish/1. RTC
+      Suntik.unity
+    guid: d3d5ff2b0e3342947912b9ac73b6d7f6
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Tailed Catfish/2. RTC
+      StrippingBetina.unity
+    guid: d602cdc5bb85c754b8b9b83a1e3738d8
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Tailed Catfish/3. RTC
+      StrippingJantan.unity
+    guid: adb15da5eb04dfe45a8f93803ea12f5d
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Tailed Catfish/4. RTC
+      Mixing.unity
+    guid: 49d6036ec6f692d438e044123128e5bc
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Red Tailed Catfish/5. RTC
+      Dropping.unity
+    guid: 8f5f7fa06bc872144baf4ccc0410c5fb
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Sterlet/1. Sterlet Suntik.unity
+    guid: 8986222c14251da40a1cc3d613bdccd1
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Sterlet/2. Sterlet StrippingBetina.unity
+    guid: 7dae85d2497f76b408c64414980c5e04
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Sterlet/3. Sterlet StrippingJantan.unity
+    guid: 5954412fb8745fb40be6a52987e2ddef
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Sterlet/4. Sterlet Mixing.unity
+    guid: 33fda5dc54880524f8729cb9e5185ece
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Sterlet/5. Sterlet Dropping.unity
+    guid: b9cd91c72fc5a844186bfcc7e985d92d
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Tiger Catfish/1. TC Suntik.unity
+    guid: dc7bd35bf2cf14a419ded5392811c474
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Tiger Catfish/2. TC StrippingBetina.unity
+    guid: 2fe974811825eb149bf6525607eb3790
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Tiger Catfish/3. TC StrippingJantan.unity
+    guid: 7f8dfbb98d09dc74596f9459aa7fb797
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Tiger Catfish/4. TC Mixing.unity
+    guid: 2f7d094e480379b49805c1440c4ab503
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Medium/Tiger Catfish/5. TC Dropping.unity
+    guid: 99222866a27b2c2488f7f010ec0f09cc
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Banded Leporinus/1. BL Suntik.unity
+    guid: 1f1946ce8b75d3445939fc1b9cb621f3
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Banded Leporinus/2. BL StrippingBetina.unity
+    guid: e3073f2a467b23b4e8c9b6a8b146e9ab
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Banded Leporinus/3. BL StrippingJantan.unity
+    guid: 51c897391da2678498f2b5f1cd53a61d
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Banded Leporinus/4. BL Mixing.unity
+    guid: bbf424973b533d44a942aebeaa81690f
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Banded Leporinus/5. BL Dropping.unity
+    guid: 9a4d33ba250ad364db15b0e5752bdcd4
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Elepent Fish/1. EF Suntik.unity
+    guid: 7efc553693feeaa4aac88eb86fc55166
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Elepent Fish/2. EF StrippingBetina.unity
+    guid: 99dc3c86e0eab0e45a7780c143a34972
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Elepent Fish/3. EF StrippingJantan.unity
+    guid: 4bc8f735e9ea0a943bee41ac9b696164
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Elepent Fish/4. EF Mixing.unity
+    guid: 1b1a6e9f67315da468f1600572d52cd9
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Elepent Fish/5. EF Dropping.unity
+    guid: 2a8507a764672b5478c3ae946896421c
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Redfin Shark/1. RS Suntik.unity
+    guid: ffeb8242ae0c83140b8d83e4e35c36df
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Redfin Shark/2. RS StrippingBetina.unity
+    guid: 719f1e574292f074fb7edee2f8d8e70a
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Redfin Shark/3. RS StrippingJantan.unity
+    guid: 97e47629744f0ac4b9215e533ad70ad5
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Redfin Shark/4. RS Mixing.unity
+    guid: 1b6e87ff6ef37fd4bb637333fd5e5da4
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Redfin Shark/5. RS Dropping.unity
+    guid: bbd1df009b59c2c4eaab6f70295aa875
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Spotted Raphael Catfish/1.
+      SRC Suntik.unity
+    guid: 2eb8ea23bd1c72c479128175fe010615
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Spotted Raphael Catfish/2.
+      SRC StrippingBetina.unity
+    guid: 38e8255909d27e74a95d5fb65d802866
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Spotted Raphael Catfish/3.
+      SRC StrippingJantan.unity
+    guid: 995e27b75c166f24ea6a543ec705d8f2
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Spotted Raphael Catfish/4.
+      SRC Mixing.unity
+    guid: 52005f8abd8b7e04ba86005fe3fd8dc9
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Spotted Raphael Catfish/5.
+      SRC Dropping.unity
+    guid: cf28d2f7f92d1cb40bcad4152421b8ea
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Upside Down Catfish/1. UDC
+      Suntik.unity
+    guid: 31f250763dc7eff4cb6e59ede2fc5b0b
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Upside Down Catfish/2. UDC
+      StrippingBetina.unity
+    guid: ea0d09fc92ec625408db51424f1b7015
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Upside Down Catfish/3. UDC
+      StrippingJantan.unity
+    guid: 887d7a923c980e645b96ff584063e834
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Upside Down Catfish/4. UDC
+      Mixing.unity
+    guid: 23c96e1eba5fae042899bf8cbfe5b884
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Upside Down Catfish/5. UDC
+      Dropping.unity
+    guid: fad249d8d5438564eac81631af8cc993
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Yoyo Loach/1. YL Suntik.unity
+    guid: 723d727de9882b14aad5439f711c7662
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Yoyo Loach/2. YL StrippingBetina.unity
+    guid: be4ce0456a7418e41a858598eed274d7
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Yoyo Loach/3. YL StrippingJantan.unity
+    guid: 32520987e9cd1af49a240ffb83f562e0
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Yoyo Loach/4. YL Mixing.unity
+    guid: 7cb2bbbcf98224845b539465108936ee
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Hias/Small/Yoyo Loach/5. YL Dropping.unity
+    guid: 483c3669744dd254baa3edc10d7ce3f7
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Atlantic Salmon/1. AS Suntik.unity
+    guid: ace49672348f55f4aa85a775047a4ba4
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Atlantic Salmon/2. AS StrippingBetina.unity
+    guid: a4be77de5db4f2b46ac1948afd53a12e
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Atlantic Salmon/3. AS StrippingJantan.unity
+    guid: c02afbd2c27755b4e9cfa98618777101
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Atlantic Salmon/4. AS Mixing.unity
+    guid: 40a568aa5e16afa42abccd6f5a045a36
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Atlantic Salmon/5. AS Dropping.unity
+    guid: 6897c1aae087d3642bfca3c73c4a0506
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cobia/1. Cobia Suntik.unity
+    guid: e31b46a759ddebc4b8027d60ecb1ea98
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cobia/2. Cobia StrippingBetina.unity
+    guid: aee0ea27596f3d34691e11575f2e1dde
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cobia/3. Cobia StrippingJantan.unity
+    guid: 042c6d27d5c1288458c044837fec4bd2
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cobia/4. Cobia Mixing.unity
+    guid: 8ff7eebb967e5f94a858d3607d5c43e1
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cobia/5. Cobia Dropping.unity
+    guid: 9a8e4b589d9da5e42930aec3a0b2b4ab
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cod/1. Cod Suntik.unity
+    guid: af2e369a3983cf74a81141ed6c4e7cf6
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cod/2. Cod StrippingBetina.unity
+    guid: c1efa7bb7fa93624580521f1773aa542
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cod/3. Cod StrippingJantan.unity
+    guid: d21febc77f5295b459b1d4801345935a
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cod/4. Cod Mixing.unity
+    guid: a3327c310986fe04fa9dfa77e2664ed2
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Cod/5. Cod Dropping.unity
+    guid: d5b84576c6677f7498237d91922800f7
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Glass Carp/1. GC Suntik.unity
+    guid: ab865bbeb7defe14695e8945170d1209
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Glass Carp/2. GC StrippingBetina.unity
+    guid: 5a39bf85a72915f42adc6f3fd52f70bf
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Glass Carp/3. GC StrippingJantan.unity
+    guid: 0cf8db6c70020f54ba2f50954412ac49
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Glass Carp/4. GC Mixing.unity
+    guid: 953ddbedfc08ecc449d5238e88cc1e07
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Glass Carp/5. GC Dropping.unity
+    guid: 7546b81c198c164448b1606514b76480
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Pangasius Catfish/1. PC
+      Suntik.unity
+    guid: a311b842ca7b7024890477690f15962c
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Pangasius Catfish/2. PC
+      StrippingBetina.unity
+    guid: eff607cdfad1b394b9bede38d2498631
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Pangasius Catfish/3. PC
+      StrippingJantan.unity
+    guid: 8ef115d55ee958f48a447b8e7bcae6e8
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Pangasius Catfish/4. PC
+      Mixing.unity
+    guid: 3b193b008dc780d41be0b5585db93c4a
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Large/Pangasius Catfish/5. PC
+      Dropping.unity
+    guid: f2f7db4d5962a1c40bba18f816e0bf70
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Medium/Turbot/1. Turbot Suntik.unity
+    guid: 7f6a2c04378d2154e9367fde02aa5c1b
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Medium/Turbot/2. Turbot StrippingBetina.unity
+    guid: 3dd4955cfd6f4dd4ca601fe4874004a5
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Medium/Turbot/3. Turbot StrippingJantan.unity
+    guid: da89862b7dbaac947b348d36a06272d0
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Medium/Turbot/4. Turbot Mixing.unity
+    guid: e34941cc4b26b8d4bac13a4a7f7b5105
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Ikan Konsumsi/Medium/Turbot/5. Turbot Dropping.unity
+    guid: 7a6ddd6a715fa4349973de93dfc1b839
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Menu/GetLeaderboard.unity
     guid: c3bc0aadbb354c5498d593345c0574c1
   m_configObjects: {}
