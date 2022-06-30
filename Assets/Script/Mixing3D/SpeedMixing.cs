@@ -32,6 +32,8 @@ public class SpeedMixing : MonoBehaviour
     Vector3 spermPos = new Vector3(0.222f, 1.627f, -8.5852f);
     Vector3 telurPos = new Vector3(-0.1901f, 1.627f, -8.5852f);
 
+    [SerializeField] private string nameSpermaCount, nameTelurCount, mixingCount;
+
     private void Start()
     {
         progressTeraduk.fillAmount = 0;
@@ -48,12 +50,12 @@ public class SpeedMixing : MonoBehaviour
 
         //Debug.Log("telur = " + PlayerPrefs.GetFloat("TelurCount").ToString("0") + "|| sperma = " + PlayerPrefs.GetFloat("SpermaCount").ToString("0"));
 
-        for (int i = 0; i < ((int)(PlayerPrefs.GetFloat("SpermaCount") / 10)); i++)
+        for (int i = 0; i < ((int)(PlayerPrefs.GetFloat(nameSpermaCount) / 10)); i++)
         {
             Instantiate(spermaPrefabs, spermPos, Quaternion.identity);
         }
 
-        for (int i = 0; i < ((int)(PlayerPrefs.GetFloat("TelurCount") / 20)); i++)
+        for (int i = 0; i < ((int)(PlayerPrefs.GetFloat(nameTelurCount) / 20)); i++)
         {
             Instantiate(telurPrefabs, telurPos, Quaternion.identity);
         }
@@ -142,7 +144,7 @@ public class SpeedMixing : MonoBehaviour
                 scoreMixing.SetText(telurTeradukCount.ToString("0"));
                 winPanel.SetActive(true);
 
-                PlayerPrefs.SetFloat("MixingCount", telurTeradukCount);
+                PlayerPrefs.SetFloat(mixingCount, telurTeradukCount);
             }
         }
     }

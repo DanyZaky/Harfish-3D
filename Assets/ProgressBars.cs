@@ -20,16 +20,18 @@ public class ProgressBars : MonoBehaviour
     [SerializeField] private GameObject teluraMixedPrefabs;
     Vector3 pos = new Vector3(59.2f, 50f, -174f);
 
+    [SerializeField] private string terpijahCount, mixingCount;
+
     private void Start()
     {
         progressbarfill.fillAmount = 0;
         currentJumlahTelur = jumlahTelur;
 
-        maksJumlahTelur = PlayerPrefs.GetFloat("MixingCount");
+        maksJumlahTelur = PlayerPrefs.GetFloat(mixingCount);
 
         isWin = true;
 
-        for (int i = 0; i < ((int)(PlayerPrefs.GetFloat("MixingCount") / 20)); i++)
+        for (int i = 0; i < ((int)(PlayerPrefs.GetFloat(mixingCount) / 20)); i++)
         {
             Instantiate(teluraMixedPrefabs, pos, Quaternion.identity);
             pos.y += 10f;
@@ -72,12 +74,12 @@ public class ProgressBars : MonoBehaviour
             
             hasilPijahText.SetText(currentJumlahTelur.ToString("0"));
 
-            if(currentJumlahTelur > PlayerPrefs.GetFloat("TerpijahCount"))
+            if(currentJumlahTelur > PlayerPrefs.GetFloat(terpijahCount))
             {
-                PlayerPrefs.SetFloat("TerpijahCount", currentJumlahTelur);
+                PlayerPrefs.SetFloat(terpijahCount, currentJumlahTelur);
             }
 
-            highScoreText.SetText(PlayerPrefs.GetFloat("TerpijahCount").ToString("0"));
+            highScoreText.SetText(PlayerPrefs.GetFloat(terpijahCount).ToString("0"));
             
 
             //Destroy(GameObject.Find("Telur Mixed(Clone)"));

@@ -9251,7 +9251,7 @@ MonoBehaviour:
   isWin: 0
   moveFilledBowl: 0.2
   selCount: 50
-  nameValue: TelurCount
+  nameValue: TelurRedPacu
   animStrip: strip medium
   animIdle: idle medium
   animMarah: marah medium

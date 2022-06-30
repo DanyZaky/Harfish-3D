@@ -6314,7 +6314,10 @@ MonoBehaviour:
   isWin: 0
   moveFilledBowl: 0.05
   selCount: 7.5
-  nameValue: SpermaCount
+  nameValue: SpermaDenisoni
+  animStrip: stripdenisoni
+  animIdle: idle denisoni
+  animMarah: marah denisoni
 --- !u!23 &1357423492
 MeshRenderer:
   m_ObjectHideFlags: 0

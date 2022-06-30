@@ -9846,10 +9846,10 @@ MonoBehaviour:
   isWin: 0
   moveFilledBowl: 0.2
   selCount: 50
-  nameValue: TelurCount
-  animStrip: 
-  animIdle: 
-  animMarah: 
+  nameValue: TelurDenisoni
+  animStrip: stripdenisoni
+  animIdle: idle denisoni
+  animMarah: marah denisoni
 --- !u!64 &1357423492
 MeshCollider:
   m_ObjectHideFlags: 0

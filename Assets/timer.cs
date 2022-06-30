@@ -17,14 +17,13 @@ public class timer : MonoBehaviour
     private bool isWin;
 
     [SerializeField] private ProgressBars pb;
+    [SerializeField] private string terpijahCount;
     
     // Start is called before the first frame update
     void Start()
     {
         currentTime = startSeconds * 1;
         isWin = true;
-
-        
     }
     
     // Update is called once per frame
@@ -54,12 +53,12 @@ public class timer : MonoBehaviour
 
                 pb.hasilPijahText.SetText(pb.currentJumlahTelur.ToString("0"));
 
-                if (pb.currentJumlahTelur > PlayerPrefs.GetFloat("TerpijahCount"))
+                if (pb.currentJumlahTelur > PlayerPrefs.GetFloat(terpijahCount))
                 {
-                    PlayerPrefs.SetFloat("TerpijahCount", pb.currentJumlahTelur);
+                    PlayerPrefs.SetFloat(terpijahCount, pb.currentJumlahTelur);
                 }
 
-                pb.highScoreText.SetText(PlayerPrefs.GetFloat("TerpijahCount").ToString("0"));
+                pb.highScoreText.SetText(PlayerPrefs.GetFloat(terpijahCount).ToString("0"));
             }
         }
         TimeSpan time = TimeSpan.FromSeconds(currentTime);

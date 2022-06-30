@@ -7483,6 +7483,9 @@ MonoBehaviour:
   ds: {fileID: 1342521595}
   telurTeradukCount: 0
   isAdaSelSperma: 0
+  nameSpermaCount: SpermaRedfinShark
+  nameTelurCount: TelurRedfinShark
+  mixingCount: MixingRedfinShark
 --- !u!1 &1618310416
 GameObject:
   m_ObjectHideFlags: 0
