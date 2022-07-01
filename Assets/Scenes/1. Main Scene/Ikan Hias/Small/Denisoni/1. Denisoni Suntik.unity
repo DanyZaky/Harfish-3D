@@ -1787,6 +1787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -23979,6 +23980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -51838,6 +51840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -52114,6 +52117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -73183,6 +73187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -120484,6 +120489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -137549,6 +137555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -143927,6 +143934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -144689,6 +144697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -145450,6 +145459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 7a8350e4e44f9e14ca28a4f53d0c94a4, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:

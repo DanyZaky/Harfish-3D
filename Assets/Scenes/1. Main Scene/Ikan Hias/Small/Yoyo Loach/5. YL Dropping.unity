@@ -777,6 +777,8 @@ MonoBehaviour:
   hasilPijahText: {fileID: 1452993842}
   highScoreText: {fileID: 2138151018}
   teluraMixedPrefabs: {fileID: 2353472686107944949, guid: 68f97e94edf11b94c9ff7f2a92987a5e, type: 3}
+  terpijahCount: 
+  mixingCount: 
 --- !u!1001 &71302146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7188,13 +7190,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528e4dee3bac23b439505d2267e0616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 2fb459155d26d1b4ba80bcb456a79650, type: 2}
   timerActive: 0
   timeisup: 0
   ikan: 0
-  startSeconds: 35
   currentTimeText: {fileID: 1645034176}
   kalah: {fileID: 1984044186}
   pb: {fileID: 60961141}
+  terpijahCount: 
 --- !u!1 &1971155186
 GameObject:
   m_ObjectHideFlags: 0

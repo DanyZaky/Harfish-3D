@@ -11861,7 +11861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.3, y: -1.6}
+  m_AnchoredPosition: {x: -14.3, y: 8.5}
   m_SizeDelta: {x: 38.835, y: 38.835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &248790728
@@ -23360,6 +23360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -51569,6 +51570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -67258,6 +67260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -67837,8 +67840,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.2504, y: -16.294}
-  m_SizeDelta: {x: 300.2168, y: 230.29}
+  m_AnchoredPosition: {x: 48.093, y: 0.864}
+  m_SizeDelta: {x: 196.18, y: 199.746}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089397985
 MonoBehaviour:
@@ -77958,6 +77961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -90065,6 +90069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -110335,6 +110340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -121166,6 +121172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -121787,6 +121794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -137693,6 +137701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -145756,6 +145765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8a0020d81a612d84eaa5f0cf8d3cbeab, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:

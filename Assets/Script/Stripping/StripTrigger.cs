@@ -7,21 +7,24 @@ using DG.Tweening;
 
 public class StripTrigger : MonoBehaviour
 {
+    [SerializeField] private IkanVariable iv;
+    public bool isTelur;
+
     Vector3 offset;
     public string destinationTag = "DropArea";
     public Vector3 startPosition;
 
     PowerBar pb;
 
-    private float jumlahTelur;
-    [SerializeField] private float maxJumlahTelur;
+    [HideInInspector] public float jumlahTelur;
+    [HideInInspector] public float maxJumlahTelur;
     [SerializeField] private Image progressBar;
 
     [SerializeField] private TextMeshProUGUI jumalhTelurText, countdownText, currentScore;
     [SerializeField] private GameObject delayStripping, prefabsSelTelur, winPanel, losePanel, filledBowl;
     [SerializeField] private DialogueStripping ds;
 
-    [SerializeField] private float countDown;
+    private float countDown;
     [SerializeField] private Animator handAnim, fishAnim;
     private float countDownCounter;
     private bool isGameOver;
@@ -36,8 +39,22 @@ public class StripTrigger : MonoBehaviour
 
     [SerializeField] private string animStrip, animIdle, animMarah;
 
+    [HideInInspector] public bool isDamagedFish;
+
     void Start()
     {
+        if(isTelur == true)
+        {
+            maxJumlahTelur = iv.MaxTelur;
+            countDown = iv.TimerStrippingBetina;
+        }
+
+        if(isTelur == false)
+        {
+            maxJumlahTelur = iv.MaxSperma;
+            countDown = iv.TimerStrippingJantan;
+        }
+        
         pb = GameObject.Find("PowerBar").GetComponent<PowerBar>();
         delayStripping.GetComponent<MeshCollider>().enabled = false;
 
@@ -64,6 +81,13 @@ public class StripTrigger : MonoBehaviour
         if (ds.startTutorial == true)
         {
             isGameOver = false;
+        }
+
+        if (jumlahTelur < 0)
+        {
+            jumlahTelur = 0;
+            jumalhTelurText.SetText(jumlahTelur.ToString("0"));
+            progressBar.fillAmount = jumlahTelur / maxJumlahTelur;
         }
     }
 
@@ -163,6 +187,7 @@ public class StripTrigger : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
 
         SoundManager.Instance.PlaySFX("SFX Angry");
+        isDamagedFish = true;
         handAnim.Play(animMarah);
 
         yield return new WaitForSeconds(1.7f);
@@ -173,6 +198,7 @@ public class StripTrigger : MonoBehaviour
         gameObject.GetComponent<MeshCollider>().enabled = true;
         gameObject.transform.position = startPosition;
         delayStripping.GetComponent<MeshCollider>().enabled = false;
+        isDamagedFish = false;
     }
 
     private void WinLoseCondition()

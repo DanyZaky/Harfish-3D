@@ -11340,6 +11340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -11498,6 +11499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -11839,8 +11841,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.3, y: -1.6}
-  m_SizeDelta: {x: 38.835, y: 38.835}
+  m_AnchoredPosition: {x: -17.5, y: 0.00000035763}
+  m_SizeDelta: {x: 42.437, y: 47.702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &248790728
 Animator:
@@ -12147,6 +12149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -23023,6 +23026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -25156,6 +25160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -61876,6 +61881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -67675,7 +67681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.2504, y: -16.294}
+  m_AnchoredPosition: {x: 17.865, y: -32.195}
   m_SizeDelta: {x: 300.2168, y: 230.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089397985
@@ -72721,6 +72727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -78045,6 +78052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -109739,6 +109747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:
@@ -121023,6 +121032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba3bfb0e29bf9b4fa69613f702a590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   speed: 7
   startWaitTime: 0
   moveSpots:

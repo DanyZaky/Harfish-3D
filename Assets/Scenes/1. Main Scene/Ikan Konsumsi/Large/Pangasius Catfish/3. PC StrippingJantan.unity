@@ -1879,7 +1879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &614980483
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5262,6 +5262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a67c922f91a8c4fa8dcf8b3119b289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 068a052a5f2e69a4b9e8e570b96b91f9, type: 2}
+  isTelur: 0
   destinationTag: DropArea
   startPosition: {x: 1.23, y: 2.04, z: -8}
   maxJumlahTelur: 50
@@ -5275,7 +5277,6 @@ MonoBehaviour:
   losePanel: {fileID: 715560275}
   filledBowl: {fileID: 811057316}
   ds: {fileID: 1208839427}
-  countDown: 25
   handAnim: {fileID: 1290925602}
   fishAnim: {fileID: 1583235779}
   isWin: 0

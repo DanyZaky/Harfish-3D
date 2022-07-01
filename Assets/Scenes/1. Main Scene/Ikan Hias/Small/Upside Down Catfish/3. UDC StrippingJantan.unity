@@ -6305,6 +6305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a67c922f91a8c4fa8dcf8b3119b289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 8b3f9b36d21dfc7468ee67ce2e6c39ad, type: 2}
+  isTelur: 0
   destinationTag: DropArea
   startPosition: {x: 1.23, y: 2.04, z: -8}
   maxJumlahTelur: 50
@@ -6318,7 +6320,6 @@ MonoBehaviour:
   losePanel: {fileID: 715560275}
   filledBowl: {fileID: 811057316}
   ds: {fileID: 1208839427}
-  countDown: 25
   handAnim: {fileID: 251614212}
   fishAnim: {fileID: 1583235779}
   isWin: 0

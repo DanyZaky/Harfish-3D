@@ -1882,7 +1882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &614980483
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5196,9 +5196,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a67c922f91a8c4fa8dcf8b3119b289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 87c8b72abe1d24e498f245045c16ac65, type: 2}
+  isTelur: 0
   destinationTag: DropArea
-  startPosition: {x: 1.23, y: 2.04, z: -8}
-  maxJumlahTelur: 50
+  startPosition: {x: -0.08, y: 1.78, z: -8}
+  maxJumlahTelur: 0
   progressBar: {fileID: 1666169358}
   jumalhTelurText: {fileID: 1604991305}
   countdownText: {fileID: 1526486211}
@@ -5209,7 +5211,6 @@ MonoBehaviour:
   losePanel: {fileID: 715560275}
   filledBowl: {fileID: 811057316}
   ds: {fileID: 1208839427}
-  countDown: 25
   handAnim: {fileID: 2000109198}
   fishAnim: {fileID: 1583235779}
   isWin: 0
@@ -5268,7 +5269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357423490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.18, y: 1.78, z: -8}
+  m_LocalPosition: {x: -0.08, y: 1.78, z: -8}
   m_LocalScale: {x: 3.7212343, y: 2.8953917, z: 1}
   m_Children:
   - {fileID: 1013975588}

@@ -7190,10 +7190,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528e4dee3bac23b439505d2267e0616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 0dea65e5518f31a478eb46cf1b59fbf7, type: 2}
   timerActive: 0
   timeisup: 0
   ikan: 0
-  startSeconds: 35
   currentTimeText: {fileID: 1645034176}
   kalah: {fileID: 1984044186}
   pb: {fileID: 60961141}

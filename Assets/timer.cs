@@ -6,11 +6,13 @@ using TMPro;
 using System;
 public class timer : MonoBehaviour
 {
+    public IkanVariable iv;
+    
     public bool timerActive = false;
     public bool timeisup = false;
     public bool ikan = false;
     float currentTime;
-    public int startSeconds;
+    private float startSeconds;
     public TextMeshProUGUI currentTimeText;
     public GameObject kalah;
 
@@ -22,6 +24,8 @@ public class timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        startSeconds = iv.TimerDropping;
+        
         currentTime = startSeconds * 1;
         isWin = true;
     }

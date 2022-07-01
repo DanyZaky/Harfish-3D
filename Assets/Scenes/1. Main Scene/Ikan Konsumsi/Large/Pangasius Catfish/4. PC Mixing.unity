@@ -7464,6 +7464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076b77dfccfe421478dd88ca6236b40d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iv: {fileID: 11400000, guid: 068a052a5f2e69a4b9e8e570b96b91f9, type: 2}
   speed: 0
   telurTeraduk: {fileID: 1633409661}
   countdown: {fileID: 387143121}
@@ -7476,7 +7477,6 @@ MonoBehaviour:
   losePanel: {fileID: 258934393}
   cibTelur: {fileID: 84484117}
   cibSperma: {fileID: 2034263117}
-  cd: 45
   tutorPanel1: {fileID: 367473351}
   tutorPanel2: {fileID: 1159428091}
   tutorPanel3: {fileID: 1606285775}

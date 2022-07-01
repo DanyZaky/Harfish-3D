@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Patrolling : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] IkanVariable iv;
+    
+    [HideInInspector] public float speed;
     private float waitTime;
     public float startWaitTime;
     [SerializeField] private Transform[] moveSpots;
@@ -18,6 +20,8 @@ public class Patrolling : MonoBehaviour
 
     void Start()
     {
+        speed = iv.speedIkan;
+        
         fnm = GameObject.Find("FishNeededManager").GetComponent<FishNeededManager>();
 
         for (int i = 0; i < 23; i++)

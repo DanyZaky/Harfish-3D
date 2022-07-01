@@ -7,6 +7,8 @@ using DG.Tweening;
 
 public class SpeedMixing : MonoBehaviour
 {
+    [SerializeField] private IkanVariable iv;
+    
     Vector3 PreviousFramePosition = Vector3.zero;
     public float speed = 0f;
 
@@ -16,7 +18,7 @@ public class SpeedMixing : MonoBehaviour
     [SerializeField] private GameObject winPanel, telurPrefabs, spermaPrefabs, losePanel;
     [SerializeField] private CountInBowl cibTelur, cibSperma;
 
-    [SerializeField] private float cd;
+    private float cd;
 
     [SerializeField] private CanvasGroup tutorPanel1, tutorPanel2, tutorPanel3;
 
@@ -37,6 +39,8 @@ public class SpeedMixing : MonoBehaviour
     private void Start()
     {
         progressTeraduk.fillAmount = 0;
+
+        cd = iv.TimerMixing;
 
         currentCD = cd;
         isGameOver = true;
