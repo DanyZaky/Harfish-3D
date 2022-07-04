@@ -11167,16 +11167,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248790726}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.05523529, w: -0.99847335}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 731955883}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.333}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000019073, y: 22.409}
+  m_AnchoredPosition: {x: -0.0000019455092, y: 22.408998}
   m_SizeDelta: {x: 47.479, y: 44.819}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &248790728
@@ -23951,14 +23951,6 @@ MonoBehaviour:
   IkanDiKolam:
   - {fileID: 1750675575}
   - {fileID: 922133770}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &533902948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66039,8 +66031,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444, y: 58}
-  m_SizeDelta: {x: 276.12, y: 253.04}
+  m_AnchoredPosition: {x: 114, y: 78.635}
+  m_SizeDelta: {x: 286.16, y: 286.7304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089397985
 MonoBehaviour:
@@ -132832,6 +132824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534c239b9eab702419aab81d2b7a42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areaSuntik: {x: 114, y: 78.635}
   tanganPegangIkan: {fileID: 307656444}
   tanganPegangIkanBetina: {fileID: 1295971590}
   suntikGaming: {fileID: 53736314}

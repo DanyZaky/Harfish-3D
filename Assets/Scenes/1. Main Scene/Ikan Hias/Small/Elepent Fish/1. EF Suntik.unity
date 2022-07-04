@@ -137251,6 +137251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534c239b9eab702419aab81d2b7a42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areaSuntik: {x: 48.093, y: 0.864}
   tanganPegangIkan: {fileID: 307656444}
   tanganPegangIkanBetina: {fileID: 1295971590}
   suntikGaming: {fileID: 53736314}

@@ -67681,8 +67681,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.865, y: -32.195}
-  m_SizeDelta: {x: 300.2168, y: 230.29}
+  m_AnchoredPosition: {x: 39.653, y: -30}
+  m_SizeDelta: {x: 300.2168, y: 280.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089397985
 MonoBehaviour:
@@ -136854,6 +136854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534c239b9eab702419aab81d2b7a42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areaSuntik: {x: 39.653, y: -30}
   tanganPegangIkan: {fileID: 307656444}
   tanganPegangIkanBetina: {fileID: 1295971590}
   suntikGaming: {fileID: 53736314}

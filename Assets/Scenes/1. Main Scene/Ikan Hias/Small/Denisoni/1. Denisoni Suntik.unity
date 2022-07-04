@@ -25638,12 +25638,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 398073929}
         m_TargetAssemblyTypeName: SceneManagementt, Assembly-CSharp
-        m_MethodName: startPijah
-        m_Mode: 1
+        m_MethodName: nextScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -136331,6 +136331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534c239b9eab702419aab81d2b7a42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areaSuntik: {x: 15.2504, y: -16.294}
   tanganPegangIkan: {fileID: 307656444}
   tanganPegangIkanBetina: {fileID: 1295971590}
   suntikGaming: {fileID: 53736314}

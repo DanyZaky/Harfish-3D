@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SuntikManager : MonoBehaviour
 {
+    [SerializeField] private Vector2 areaSuntik;
+
     [SerializeField] private GameObject tanganPegangIkan, tanganPegangIkanBetina, suntikGaming, suntikArea1, suntikArea2, suntikArea3, suntikan1, suntikan2, suntikan3, buttonPijah;
     [SerializeField] private GameObject ikan;
     [SerializeField] private RectTransform areaSuntik1, areaSuntik2, areaSuntik3;
@@ -111,9 +113,9 @@ public class SuntikManager : MonoBehaviour
 
             ikan.SetActive(true);
 
-            areaSuntik1.anchoredPosition = new Vector2(17.865f, -15.06f);
-            areaSuntik2.anchoredPosition = new Vector2(17.865f, -15.06f);
-            areaSuntik3.anchoredPosition = new Vector2(17.865f, -15.06f);
+            areaSuntik1.anchoredPosition = areaSuntik;
+            areaSuntik2.anchoredPosition = areaSuntik;
+            areaSuntik3.anchoredPosition = areaSuntik;
 
             isTerpijah = true;
 

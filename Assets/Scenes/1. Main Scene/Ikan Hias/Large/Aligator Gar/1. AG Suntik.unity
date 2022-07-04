@@ -11341,17 +11341,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248790726}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.02176941, w: -0.999763}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 731955883}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.495}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.3, y: -1.6}
-  m_SizeDelta: {x: 38.835, y: 38.835}
+  m_AnchoredPosition: {x: -16.534, y: 27.417}
+  m_SizeDelta: {x: 44.602, y: 44.602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &248790728
 Animator:
@@ -66209,7 +66209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.553097, y: 27.969}
+  m_AnchoredPosition: {x: 36, y: 88.69}
   m_SizeDelta: {x: 371.8239, y: 350.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089397985
@@ -133121,6 +133121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534c239b9eab702419aab81d2b7a42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areaSuntik: {x: 36, y: 88.69}
   tanganPegangIkan: {fileID: 307656444}
   tanganPegangIkanBetina: {fileID: 1295971590}
   suntikGaming: {fileID: 53736314}
