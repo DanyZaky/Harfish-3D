@@ -7197,7 +7197,7 @@ MonoBehaviour:
   currentTimeText: {fileID: 1645034176}
   kalah: {fileID: 1984044186}
   pb: {fileID: 60961141}
-  terpijahCount: 
+  terpijahCount: TerpijahYoyoLoach
 --- !u!1 &1971155186
 GameObject:
   m_ObjectHideFlags: 0

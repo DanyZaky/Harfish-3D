@@ -9,6 +9,7 @@ public class TuangCOntroller : MonoBehaviour
     [HideInInspector] public float tuangValue;
     [SerializeField] private float tuangValueCounter;
     [SerializeField] private PowerBarMixing pbm;
+    [SerializeField] private GameObject pembatasMangkok1, pembatasMangkok2;
     private float rotateZ;
 
     private bool isTuang;
@@ -45,6 +46,14 @@ public class TuangCOntroller : MonoBehaviour
             bowl.transform.rotation = Quaternion.Euler(0, 0, rotateZ);
 
             Debug.Log("nilai: " + rotateZ.ToString("0"));
+
+            pembatasMangkok1.SetActive(false);
+            pembatasMangkok2.SetActive(false);
+        }
+        if(isTuang == false)
+        {
+            pembatasMangkok1.SetActive(true);
+            pembatasMangkok2.SetActive(true);
         }
     }
 
