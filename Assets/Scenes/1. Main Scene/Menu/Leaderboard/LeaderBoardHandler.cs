@@ -2,24 +2,67 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using LootLocker.Requests;
 public class LeaderBoardHandler : MonoBehaviour
 {
     private int currentPosition;
     private bool hias, konsumsi;
     [SerializeField] Text namaIkanTextBox;
-    [SerializeField] GameObject parentIkan, gambarIkanObject;
+    [SerializeField] GameObject parentIkan, gambarIkanObject, rankPrefabs;
     //[SerializeField] GameObject[] menu;
     [SerializeField] string[] namaIkan;
     [SerializeField] Sprite[] gambarIkan,gambarStep;
     [SerializeField] float[] posisiGambarIkan;
-
+    [SerializeField] RectTransform content;
+    private Vector2 tempSize;
+    [SerializeField] int[] dbID;
+    [SerializeField] Text[] playerName, score;
     void Start()
     {
         currentPosition = 0;
         Change();
+        tempSize = content.sizeDelta;
+        Mulai();
+        GetScore();
     }
 
+    private void Mulai()
+    {
+        LootLockerSDKManager.StartSession("guest".ToString(), (response)=>{
+            if (response.success){
+                Debug.Log("success!");
+            }else{
+                Debug.Log("failed");
+            }
+        });  
+    }
+
+    private void GetScore()
+    {
+        LootLockerSDKManager.GetScoreList(dbID[currentPosition], 10, async (response) => {
+            if(response.success){
+                LootLockerLeaderboardMember[] allMember = response.items;
+                for(int j = 0; j < allMember.Length; j++)
+                {
+                    if(j<3)
+                    {
+                        score[j].text = allMember[j].score.ToString();
+                        playerName[j].text = allMember[j].member_id;
+                    }
+                    else
+                    {
+                        content.sizeDelta = new Vector2(tempSize.x, tempSize.y-100);
+                        GameObject nr = Instantiate(rankPrefabs) as GameObject;
+                        nr.transform.parent = GameObject.Find("Content").transform;
+                        nr.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = (j+1).ToString();
+                    }
+                }
+            }else{
+                Debug.Log("failed: " + response.Error);
+            }
+        } );
+    }
+    
     private void Change()
     {
         gambarIkanObject.GetComponent<Image>().sprite = gambarIkan[currentPosition];
@@ -27,6 +70,7 @@ public class LeaderBoardHandler : MonoBehaviour
         namaIkanTextBox.text = namaIkan[currentPosition].ToUpper();
         parentIkan.transform.GetChild(currentPosition).GetComponent<Image>().sprite = gambarStep[1];
         parentIkan.transform.GetChild(currentPosition).GetComponent<RectTransform>().sizeDelta = new Vector2(40,40);
+        GetScore();
         
     }
     public void Next()
