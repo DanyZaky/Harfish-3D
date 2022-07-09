@@ -51,7 +51,7 @@ public class LeaderBoardHandler : MonoBehaviour
                     }
                     else
                     {
-                        content.sizeDelta = new Vector2(tempSize.x, tempSize.y-100);
+                        content.sizeDelta = new Vector2(tempSize.x, content.sizeDelta.y-100);
                         GameObject nr = Instantiate(rankPrefabs) as GameObject;
                         nr.transform.parent = GameObject.Find("Content").transform;
                         nr.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = (j+1).ToString();
