@@ -334,4 +334,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1. Main Scene/Menu/Select Ikan.unity
     guid: 9cc3d8c3df0fbbf4f8dc3c2129042036
+  - enabled: 1
+    path: Assets/Scenes/1. Main Scene/Menu/LoadingScene.unity
+    guid: f40cf5200e8d8894c9a7b7a4e866f581
   m_configObjects: {}
