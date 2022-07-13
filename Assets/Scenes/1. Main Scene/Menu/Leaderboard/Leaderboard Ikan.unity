@@ -24419,55 +24419,55 @@ MonoBehaviour:
   - {fileID: 328190677}
   - {fileID: 2064748622}
   namaIkan:
-  - Banded Leporinus
-  - Denisoni
-  - Elepent Fish
-  - Redfin Fish
-  - S. R. Catfish
-  - U. D. Catfish
-  - Yoyo Loach
-  - Chocolate Catfish
   - Koi
-  - Red Pacu
-  - Red Tailed Catfish
-  - Sterlet
   - Tiger Catfish
+  - Sterlet
+  - Chocolate Catfish
+  - Denisoni
+  - Banded Leporinus
+  - Yoyo Loach
+  - Redfin Fish
+  - U. D. Catfish
+  - S. R. Catfish
+  - Red Tailed Catfish
+  - Elepent Fish
+  - Red Pacu
   - Aligator Gar
   gambarIkan:
-  - {fileID: 268443180540042735, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: 801329401409246740, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: 3958669013350658791, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -5568580293056489568, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -7232772880280932871, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -2918148098959507960, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -1002355730511847365, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: 2838666659270450706, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   - {fileID: 9064366898385682773, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -581337330475956710, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -4230842664386752009, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -5535591720351139079, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   - {fileID: -711484564630854586, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: 268443180540042735, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -581337330475956710, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: 3958669013350658791, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: 801329401409246740, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: 2838666659270450706, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -7232772880280932871, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -1002355730511847365, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -2918148098959507960, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -5535591720351139079, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -5568580293056489568, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -4230842664386752009, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   - {fileID: -8639416537158264512, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   gambarStep:
   - {fileID: 21300000, guid: ee82219c0a79e4743a092b6824c2ed87, type: 3}
   - {fileID: 21300000, guid: c5047529b8267e54ba73c618dca2a822, type: 3}
   posisiGambarIkan:
+  - -60
+  - -145
+  - -95
   - -190
   - -110
+  - -190
   - -135
   - -130
-  - -135
   - -140
   - -135
-  - -190
-  - -60
-  - -115
   - -195
-  - -95
-  - -145
+  - -135
+  - -115
   - -150
   content: {fileID: 1185308841}
-  dbID: 790f00007e0f0000780f0000760f0000330f0000820f0000350f00007b0f0000750f0000730f00007c0f0000320f00007d0f0000340f0000
+  dbID: 750f00007d0f0000320f00007b0f00007e0f0000790f0000350f0000760f0000820f0000330f00007c0f0000780f0000730f0000340f0000
   scroll: {fileID: 1115880412}
 --- !u!4 &966174266
 Transform:
@@ -28768,8 +28768,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1804106399}
   m_HandleRect: {fileID: 1804106398}
   m_Direction: 0
-  m_Value: 0.0000037216225
-  m_Size: 0.990238
+  m_Value: 0.0000037216503
+  m_Size: 0.9902381
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -46191,8 +46191,8 @@ RectTransform:
   m_Father: {fileID: 232370152}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.000000036330437, y: 0}
-  m_AnchorMax: {x: 0.9902381, y: 1}
+  m_AnchorMin: {x: 0.000000036330487, y: 0}
+  m_AnchorMax: {x: 0.99023813, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -52004,30 +52004,30 @@ MonoBehaviour:
   - {fileID: 2126870637}
   namaIkan:
   - Torbot
-  - Atlantic Salmon
-  - Cobia
   - Cod
+  - Cobia
   - Glass Carp
+  - Atlantic Salmon
   - Pangasius Catfish
   gambarIkan:
   - {fileID: -4746403595477281665, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: 2954807927273625168, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -8274226557077102638, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   - {fileID: -6799319322700833259, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -8274226557077102638, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   - {fileID: -4927355731894823377, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: 2954807927273625168, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   - {fileID: 2867532066692776457, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   gambarStep:
   - {fileID: 21300000, guid: ee82219c0a79e4743a092b6824c2ed87, type: 3}
   - {fileID: 21300000, guid: c5047529b8267e54ba73c618dca2a822, type: 3}
   posisiGambarIkan:
   - -90
-  - -170
-  - -85
   - -70
+  - -85
   - -130
+  - -170
   - -190
   content: {fileID: 901762528}
-  dbID: 810f0000800f00007f0f0000770f0000740f00007a0f0000
+  dbID: 810f0000770f00007f0f0000740f0000800f00007a0f0000
   scroll: {fileID: 887119867}
 --- !u!4 &2075880613
 Transform:
