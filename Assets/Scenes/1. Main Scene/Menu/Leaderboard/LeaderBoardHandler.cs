@@ -134,7 +134,7 @@ public class LeaderBoardHandler : MonoBehaviour
     private void Change()
     {
         gambarIkanObject.GetComponent<Image>().sprite = gambarIkan[currentPosition];
-        gambarIkanObject.GetComponent<RectTransform>().position = new Vector3 (posisiGambarIkan[currentPosition], 0,0);
+        gambarIkanObject.transform.localPosition = new Vector3 (posisiGambarIkan[currentPosition], 0,0);
         namaIkanTextBox.text = namaIkan[currentPosition].ToUpper();
         parentIkan.transform.GetChild(currentPosition).GetComponent<Image>().sprite = gambarStep[1];
         parentIkan.transform.GetChild(currentPosition).GetComponent<RectTransform>().sizeDelta = new Vector2(40,40);
