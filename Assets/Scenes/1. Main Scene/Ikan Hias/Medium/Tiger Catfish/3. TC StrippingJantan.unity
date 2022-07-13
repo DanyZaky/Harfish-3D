@@ -1806,6 +1806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barracuda_triangle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5786226139264119277, guid: 85703b82ba1c99a4ea4d1031bfb8a25a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5786226139264282061, guid: 85703b82ba1c99a4ea4d1031bfb8a25a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3772,6 +3776,75 @@ PolygonCollider2D:
       - {x: -2.686788, y: 1.024807}
       - {x: -2.1403072, y: 1.8107349}
       - {x: -0.7087891, y: 2.978831}
+--- !u!1001 &1026138988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1266970062}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6948601
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5252801
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.69486
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.06
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8600001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.61
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7070585
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.008261629
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70705855
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.008261637
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.339
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
+      propertyPath: m_Name
+      value: 'Pseudoplatystoma Tigrinum (Tiger Catfish) (3D Model) '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 12a76167d269cf24fade32d014541b7b, type: 3}
 --- !u!1 &1062935233
 GameObject:
   m_ObjectHideFlags: 0
