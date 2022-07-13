@@ -26071,10 +26071,13 @@ MonoBehaviour:
   textComp: {fileID: 283368116}
   characterObj: {fileID: 2100662393}
   lines:
-  - Halo, namaku Giri!
-  - Langkah pertama adalah melakukan penyuntikan pada ikan yang mau dipijah!
-  - Lakukan dengan benar sesuai arahan, ya!
-  - Semangat!!
+  - Halo, perkenalkan saya bang giri disini kamu akan diperkenalkan ikan Elephant
+    Fish
+  - Nama ilmiah ikan Elephant Fish ini adalah "Cyprinus rubrofuscus" dan nama latin
+    "Gnathonemus petersii"
+  - Pertama kita akan melakukan pemijahan dengan penyuntikan hormon ovaprim untuk
+    merangsang pemijahan pada ikan
+  - Penyuntikan dilakukan secara intramuscular atau dekat otot punggung ikan
   giriCharacter:
   - {fileID: 21300000, guid: 4e0c3b2d026a85040a7913ba1fda94c5, type: 3}
   - {fileID: 21300000, guid: 1176f386d388797459b67fe2865bc798, type: 3}

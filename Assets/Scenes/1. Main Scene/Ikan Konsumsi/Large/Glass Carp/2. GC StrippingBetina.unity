@@ -3172,13 +3172,11 @@ MonoBehaviour:
   textComp: {fileID: 67634290}
   characterObj: {fileID: 2021454504}
   lines:
-  - Keren! Kamu telah berhasil melakukan penyuntikan dengan benar!
-  - Sekarang waktunya stripping pada Ikan Betina!
-  - Semoga berhasil!
+  - Wah Hebat, setelah penyuntikan waktunya melakukan pengurutan
+  - Pengurutan induk betina dan jantan dilakukan pada bagian perut
   giriCharacter:
   - {fileID: 21300000, guid: 4e0c3b2d026a85040a7913ba1fda94c5, type: 3}
   - {fileID: 21300000, guid: 1a195b61f51e8e746a41afeed852efdd, type: 3}
-  - {fileID: 21300000, guid: 1a6360ffaa51f334bad7ffbe5c481417, type: 3}
   textSpeed: 0.01
   panelDialogue: {fileID: 247300824}
   startTutorial: 0

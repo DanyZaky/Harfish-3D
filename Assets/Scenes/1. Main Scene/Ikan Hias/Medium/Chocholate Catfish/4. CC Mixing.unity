@@ -6135,13 +6135,11 @@ MonoBehaviour:
   textComp: {fileID: 1938923418}
   characterObj: {fileID: 173359824}
   lines:
-  - Mantap! Hasil stripping terkumpul banyak!
-  - Waktunya Mengaduk!
-  - Semoga berhasil!
+  - Kerennn, waktunya kamu mencampurkan sel telur dan sperma dalam wadah ini
+  - Gunakan bulu ayam untuk mengaduk sel telur dan sperma yang dicampur
   giriCharacter:
   - {fileID: 21300000, guid: 4e0c3b2d026a85040a7913ba1fda94c5, type: 3}
   - {fileID: 21300000, guid: 1176f386d388797459b67fe2865bc798, type: 3}
-  - {fileID: 21300000, guid: 1a6360ffaa51f334bad7ffbe5c481417, type: 3}
   textSpeed: 0.01
   panelDialogue: {fileID: 821324935}
   startTutorial: 0

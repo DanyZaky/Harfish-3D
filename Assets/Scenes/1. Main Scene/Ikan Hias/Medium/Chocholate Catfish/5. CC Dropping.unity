@@ -7325,13 +7325,12 @@ MonoBehaviour:
   textComp: {fileID: 1275638840}
   characterObj: {fileID: 1350024508}
   lines:
-  - Skill mengadukmu keren juga!
-  - Waktunya peletakan telur agar telur terpijah dengan baik!
-  - Ikuzooo!1!1!
+  - Amazinggg, kamu sudah ditahap akhir
+  - Sekarang letakkan hasil mixing sel telur dan sperma pada aquarium ini dengan
+    menggunakan bulu ayam
   giriCharacter:
   - {fileID: 21300000, guid: 4e0c3b2d026a85040a7913ba1fda94c5, type: 3}
   - {fileID: 21300000, guid: 1a6360ffaa51f334bad7ffbe5c481417, type: 3}
-  - {fileID: 21300000, guid: 1176f386d388797459b67fe2865bc798, type: 3}
   textSpeed: 0.01
   panelDialogue: {fileID: 1937723335}
   startTutorial: 0
