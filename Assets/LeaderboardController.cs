@@ -24,7 +24,7 @@ public class LeaderboardController : MonoBehaviour
     }
 
     public void submitScore(){
-        LootLockerSDKManager.SubmitScore(PlayerUsername.text, int.Parse(hScore.text), 2472, (response) =>
+        LootLockerSDKManager.SubmitScore(PlayerUsername.text, int.Parse(hScore.text), ID, (response) =>
         {
             if (response.statusCode == 200) {
                 Debug.Log("Successful");
