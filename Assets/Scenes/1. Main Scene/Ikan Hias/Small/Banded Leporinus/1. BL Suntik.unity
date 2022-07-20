@@ -23206,6 +23206,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -24799,6 +24803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -24873,6 +24881,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -25384,6 +25396,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -37165,6 +37181,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -52150,6 +52170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -73408,6 +73432,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -115530,6 +115558,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -115604,6 +115636,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -122004,6 +122040,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '
@@ -144876,6 +144916,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7412752437149836839, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22e8203b7bb40fb4f89f5a7d4a7b8a73, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b174a72a9734e24082a2e2804092f43, type: 3}
       propertyPath: m_Name
       value: 'Leporinus Fasciatus (Banded Leporinus) (3D Model) '

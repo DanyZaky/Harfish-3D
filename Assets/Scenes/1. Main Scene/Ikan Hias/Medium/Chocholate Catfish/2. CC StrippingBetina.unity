@@ -1030,6 +1030,79 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &147243365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7145252110362140290}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 34.795094
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 34.795094
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 34.795097
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70709676
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.03334105
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70632035
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0037747247
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.397
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 3.008
+      objectReference: {fileID: 0}
+    - target: {fileID: -8595880401510933330, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c79b3de64925a8747b1d1fab5dd50347, type: 2}
+    - target: {fileID: 919132149155446097, guid: 9648eca309db58a46881533391cfa10c, type: 3}
+      propertyPath: m_Name
+      value: Chocolate catfish
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9648eca309db58a46881533391cfa10c, type: 3}
 --- !u!1 &149045229
 GameObject:
   m_ObjectHideFlags: 0
@@ -13313,6 +13386,10 @@ PrefabInstance:
     - target: {fileID: 6008384878210329666, guid: d9e84cfb949e454418327195b68864e8, type: 3}
       propertyPath: m_Name
       value: seriola (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008384878210329666, guid: d9e84cfb949e454418327195b68864e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9e84cfb949e454418327195b68864e8, type: 3}

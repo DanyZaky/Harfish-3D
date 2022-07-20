@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 398567a43c8c54f48acd2d08168c9aca, type: 3}
   m_Name: 9. Upside Down Catfish
   m_EditorClassIdentifier: 
-  speedIkan: 11
+  speedIkan: 7
   TimerStrippingBetina: 35
   MaxTelur: 340
   TimerStrippingJantan: 35
