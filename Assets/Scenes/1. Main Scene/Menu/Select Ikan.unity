@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3958669013350658791, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c7bde11209524b4cbd67bc4e36f74da, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4269,7 +4269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ELEPENT FISH
+  m_text: ELEPHANT FISH
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82f60454e3f773f4cb6e6efec42b0177, type: 2}
   m_sharedMaterial: {fileID: 7040782005808225442, guid: 82f60454e3f773f4cb6e6efec42b0177, type: 2}

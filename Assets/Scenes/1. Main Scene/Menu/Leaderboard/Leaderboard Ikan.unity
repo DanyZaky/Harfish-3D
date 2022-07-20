@@ -24430,24 +24430,24 @@ MonoBehaviour:
   - U. D. Catfish
   - S. R. Catfish
   - Red Tailed Catfish
-  - Elepent Fish
+  - Elephant Fish
   - Red Pacu
   - Aligator Gar
   gambarIkan:
   - {fileID: 9064366898385682773, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -711484564630854586, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: 268443180540042735, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -581337330475956710, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: 3958669013350658791, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: 801329401409246740, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: 2838666659270450706, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -7232772880280932871, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -1002355730511847365, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -2918148098959507960, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -5535591720351139079, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -5568580293056489568, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -4230842664386752009, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -8639416537158264512, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -1002355730511847365, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: -5535591720351139079, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: 2838666659270450706, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: 801329401409246740, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: 268443180540042735, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: -2918148098959507960, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: -5568580293056489568, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: -711484564630854586, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: -7232772880280932871, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: -4230842664386752009, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: 21300000, guid: 6c7bde11209524b4cbd67bc4e36f74da, type: 3}
+  - {fileID: -581337330475956710, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: -8639416537158264512, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
   gambarStep:
   - {fileID: 21300000, guid: ee82219c0a79e4743a092b6824c2ed87, type: 3}
   - {fileID: 21300000, guid: c5047529b8267e54ba73c618dca2a822, type: 3}
@@ -52060,15 +52060,15 @@ MonoBehaviour:
   - {fileID: 1374209356}
   - {fileID: 2126870637}
   namaIkan:
-  - Torbot
+  - Turbot
   - Cod
   - Cobia
   - Glass Carp
   - Atlantic Salmon
   - Pangasius Catfish
   gambarIkan:
-  - {fileID: -4746403595477281665, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
-  - {fileID: -6799319322700833259, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
+  - {fileID: -4746403595477281665, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
+  - {fileID: -6799319322700833259, guid: 5eee3a354e2a76f4f8cc8f3669ddcbbf, type: 3}
   - {fileID: -8274226557077102638, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   - {fileID: -4927355731894823377, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
   - {fileID: 2954807927273625168, guid: bc5eab2e61fb3a24c8c44a3bccf13009, type: 3}
